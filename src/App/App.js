@@ -9,7 +9,7 @@ function App() {
   const [networkError, setNetworkError] = useState("")
 
   useEffect(() => {
-    getWordDefinition()
+    getWordDefinition() // pass in searched word from from
     .then(word => {
       console.log("word", word)
       setWord(word)
@@ -24,6 +24,7 @@ function App() {
   return (
     <main className="App">
       <h1>Word Atlas</h1>
+      
     </main>
   );
 }

@@ -1,5 +1,7 @@
-function getWordDefinition() {
-  return fetch("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
+
+
+function getWordDefinition(word) {
+  return fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
   .then((response) => {
     if(response.ok) {
       return response
