@@ -7,7 +7,6 @@ function Definition({ definitions }) {
   // do logic here. maybe a function, call function in render. function can return its own JSX
 
     const wordMeaning = definitions.definitions.map((meaning, index) => {
-      console.log("defininition", meaning)
       return (
         <div key={index}>
         <li>
@@ -19,8 +18,11 @@ function Definition({ definitions }) {
     })
   
   return (
-    <div>
-      <p>{definitions.partOfSpeech}</p>
+    <div className="definitions">
+      <div className="parts-of-speech">
+        <p>{definitions.partOfSpeech}</p>
+      </div>
+      <p className="meaning">Meaning</p>
     {wordMeaning}
   </div>
   );
