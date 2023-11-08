@@ -6,7 +6,7 @@ function SearchDefinitions({handleSearch}) {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    handleSearch(searchedWord)
+    handleSearch(searchedWord, "dictionary")
     clearInput()
   }
 

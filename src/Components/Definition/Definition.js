@@ -2,9 +2,7 @@ import React from "react";
 import "./Definition.css";
 
 function Definition({ definitions }) {
-  // console.log("meaning inside definition", definitions)
-  // map over whatever you want and render
-  // do logic here. maybe a function, call function in render. function can return its own JSX
+// add input for search type: thesaurus or dictionary. value of radio button would be string of dictionary / thesaurus. OR: make them NavLinks. would do respective API
 
     const wordMeaning = definitions.definitions.map((meaning, index) => {
       return (

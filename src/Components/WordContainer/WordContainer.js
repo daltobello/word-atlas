@@ -1,18 +1,25 @@
 import "./WordContainer.css";
 import Definition from "../Definition/Definition";
+import {useState, useEffect } from "react"
+import {getWordDefinition} from "../../apiCalls"
 
-function WordContainer({ selectedWord }) {
+function WordContainer({ selectedWord, setNetworkError}) {
+  const [wordDetails, setWordDetails] = useState({})
 
-if(Object.keys(selectedWord).length === 0) {
+  useEffect(() => {
+    if(selectedWord) {
+      getWordDefinition(selectedWord) 
+      .then((word) => {
+        setWordDetails(word[0])
+      })
+      .catch(error => setNetworkError(error.message))
+    }
+  }, [selectedWord])
+
+if(Object.keys(wordDetails).length === 0) {
   return null
 } else {
-  // console.log("selected word inside WordContainer", selectedWord)
-
-// target the definition, set to own variable, pass to Definition component
-// same with phonetics
-
-
-const definitions = selectedWord.meanings.map((definition, index) => {
+const definitions = wordDetails.meanings.map((definition, index) => {
 return <Definition key={index} definitions={definition}/>
 })
 
@@ -21,8 +28,8 @@ return <Definition key={index} definitions={definition}/>
   return (
       <div className="upper-section">
         <div className="word">
-          <h1>{selectedWord.word}</h1>
-          <p>{selectedWord.phonetic}</p>
+          <h1>{wordDetails.word}</h1>
+          <p>{wordDetails.phonetic}</p>
           <button className="phonetic-audio-btn"></button>
           {definitions}
         </div>
