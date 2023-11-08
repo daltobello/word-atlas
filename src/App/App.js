@@ -8,14 +8,14 @@ import WordContainer from '../Components/WordContainer/WordContainer';
 
 function App() {
   
-  const [selectedWord, setSelectedWord] = useState([])
+  const [selectedWord, setSelectedWord] = useState({}) // set state to nothing??
   const [networkError, setNetworkError] = useState("")
-  const [searchedWord, setSearchedWord] = useState("")
+  // const [searchedWord, setSearchedWord] = useState("")
 
   useEffect(() => {
-    getWordDefinition("slowly") // pass in searched word from from
+    getWordDefinition("great")
     .then(word => {
-      // console.log("word in App:", word[0])
+      // console.log("word in App:", word[0].meanings[0].definitions[0].definition)
       setSelectedWord(word[0])
     })
     .catch(error => setNetworkError(error.message))
@@ -25,7 +25,8 @@ function App() {
     <main className="App">
       <h1>Word Atlas</h1>
       {/* <SearchDefinitions searchedWord={searchedWord} setSearchedWord={setSearchedWord}/> */}
-      <WordContainer selectedWord={selectedWord}/>
+      <WordContainer className="word-container" selectedWord={selectedWord}/>
+
     </main>
   )
 }
