@@ -6,8 +6,8 @@ import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions
 import WordContainer from '../Components/WordContainer/WordContainer';
 
 
-function App() {Ad
-
+function App() {
+  
   const [selectedWord, setSelectedWord] = useState([])
   const [networkError, setNetworkError] = useState("")
   const [searchedWord, setSearchedWord] = useState("")
