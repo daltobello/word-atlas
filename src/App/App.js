@@ -5,7 +5,7 @@ import {Routes, Route} from "react-router-dom"
 // import getWordDefinition from '../apiCalls';
 import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions';
 import WordContainer from '../Components/WordContainer/WordContainer';
-import Thesaurus from '../Components/Thesaurus/Thesaurus';
+import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Header from '../Components/Header/Header';
 
 function App() {
@@ -34,7 +34,7 @@ const handleSearch = (searchedWord, searchType) => {
       <Routes>
         {/* <Route path="/" element={<SearchDefinitions handleSearch={handleSearch}/>} /> */}
         <Route  path="/dictionary" element={<WordContainer className="word-container" selectedWord={selectedWord} setNetworkError={setNetworkError}/>}/>
-       <Route path="/thesaurus" element={<Thesaurus className="thesaurus" selectedWord={selectedWord} setNetworkError={setNetworkError}/>}/>
+       <Route path="/thesaurus" element={<ThesaurusContainer className="thesaurus" selectedWord={selectedWord} setNetworkError={setNetworkError}/>}/>
       </Routes>
     </main>
   )
