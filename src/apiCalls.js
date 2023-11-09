@@ -12,7 +12,7 @@ function getWordDefinition(word) {
 
 
 
-function cleanThesaurusData(data) {
+function cleansynonymData(data) {
   const cleanedData = [];
 
   data.forEach(item => {
@@ -45,7 +45,7 @@ function getThesaurus(word) {
     }
   })
   .then((response) => response.json())
-  .then((data) => cleanThesaurusData(data))
+  .then((data) => cleansynonymData(data))
 }
 
 

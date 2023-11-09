@@ -20,11 +20,6 @@ function App() {
 const handleSearch = (searchedWord, searchType) => {
   setSearchType(searchType)
   setSelectedWord(searchedWord)
-  // getWordDefinition(searchedWord) 
-  // .then((word) => {
-  //   setSelectedWord(word[0])
-  // })
-  // .catch(error => setNetworkError(error.message))
 }
  
   return (
