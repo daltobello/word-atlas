@@ -12,17 +12,25 @@ function WordContainer({ selectedWord, setNetworkError}) {
       .then((word) => {
         setWordDetails(word[0])
       })
-      .catch(error => setNetworkError(error.message))
+      .catch(error => setNetworkError({hasError: true, message: `${error.message}`}))
+    }
+    return () => {
+      resetError()
     }
   }, [selectedWord])
 
+  const resetError = () => { 
+    setNetworkError({hasError: false, message: ''})
+  }
+
+let definitions = []
 if(Object.keys(wordDetails).length === 0) {
   return null
 } else {
-const definitions = wordDetails.meanings.map((definition, index) => {
+definitions = wordDetails.meanings.map((definition, index) => {
 return <Definition key={index} definitions={definition}/>
 })
-
+}
 // const phonetic = selectedWord.phonetics[0].audio
 
   return (
@@ -35,7 +43,7 @@ return <Definition key={index} definitions={definition}/>
         </div>
       </div>
     )
-}
+
 
 }
 
