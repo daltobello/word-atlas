@@ -1,9 +1,14 @@
 import "./ThesaurusDetails.css"
 
-function ThesaurusDetails() {
+function ThesaurusDetails({detail, rIndex}) {
+  let cardClass = ""
+  if(rIndex === 0) {
+    // card class is red
+    cardClass = "red-card"
+  }
   return (
-    <div>
-
+    <div className={`thes-detail-cards ${cardClass}`}>
+      <p>{detail}</p>
     </div>
   )
 }
