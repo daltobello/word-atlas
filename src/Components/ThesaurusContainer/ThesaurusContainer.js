@@ -1,39 +1,49 @@
 import Definition from "../Definition/Definition";
-import {useState, useEffect } from "react"
-import {getThesaurus} from "../../apiCalls"
+import { useState, useEffect } from "react";
+import { getThesaurus } from "../../apiCalls";
 import ThesaurusDetails from "../ThesaurusDetails/ThesaurusDetails";
+import "./ThesaurusContainer.css";
 
-
-function ThesaurusContainer({ selectedWord, setNetworkError}) {
-  const [wordDetails, setWordDetails] = useState({})
+function ThesaurusContainer({ selectedWord, setNetworkError }) {
+  const [wordDetails, setWordDetails] = useState({});
 
   useEffect(() => {
-    if(selectedWord) {
-      getThesaurus(selectedWord) 
-      .then((wordDetails) => {
-        setWordDetails(wordDetails[0])
-        console.log("wordDetails out of fetch", wordDetails)
-      })
-      .catch(error => setNetworkError(error.message))
+    if (selectedWord) {
+      getThesaurus(selectedWord)
+        .then((wordDetails) => {
+          setWordDetails(wordDetails[0]);
+          // console.log("wordDetails out of fetch", wordDetails[0])
+        })
+        .catch((error) => setNetworkError(error.message));
     }
-  }, [selectedWord])
+  }, [selectedWord]);
 
-if(!wordDetails) {
-  return null
-} else {
-  console.log("EMPTY OBJECT?", wordDetails)
-// const thesaurusData = wordDetails.map((detail, index) => {
-// return <ThesaurusDetails key={index} detail={detail}/>
-// })
-}
+  const mapThesaurusWords = (details) => {
+    return details.map((detailArr, rIndex) => {
+      return detailArr?.map((detail, index) => (
+        <ThesaurusDetails key={index} detail={detail} rIndex={rIndex} />
+      ));
+    });
+  };
 
-// // const phonetic = selectedWord.phonetics[0].audio
+  if(Object.keys(wordDetails).length === 0) {
+    return null
+  }
+  const synonymData = mapThesaurusWords(wordDetails.syns)
+  const antonymData = mapThesaurusWords(wordDetails.ants)
 
   return (
-      <div>
-        <h1>Hi!</h1>
+    <div>
+      <div className="syns-list">
+        <h3>Synonyms</h3>
+        {synonymData}
       </div>
-    )
+      <div className="ants-list">
+        <h3>Antonyms</h3>
+        {antonymData}
+      </div>
+    </div>
+  );
 }
 
-export default ThesaurusContainer
+export default ThesaurusContainer;
