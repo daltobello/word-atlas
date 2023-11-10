@@ -7,6 +7,7 @@ import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions
 import DictionaryContainer from '../Components/DictionaryContainer/DictionaryContainer';
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Navigation from '../Components/Navigation/Navigation';
+import LandingPage from '../Components/LandingPage/LandingPage';
 // import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
@@ -24,6 +25,7 @@ const handleSearch = (searchedWord, searchType) => {
         <Navigation className="nav-search"/>
         <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
       <Routes>
+        <Route path="/" element={<LandingPage/>} />
        <Route path="/dictionary" element={<DictionaryContainer className="word-container" selectedWord={selectedWord} />}/>
        <Route path="/thesaurus" element={<ThesaurusContainer className="word-container" selectedWord={selectedWord} />}/>
       </Routes>

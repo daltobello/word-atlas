@@ -15,8 +15,8 @@ function DictionaryContainer({ selectedWord }) {
           setWordDetails(word[0]);
         })
         .catch((error) => {
-          console.log("error:", error)
-            setNetworkError({ hasError: true, message: `${error.message}` })
+          console.log("error in .catch():", error)
+            setNetworkError({ hasError: true, message: `${error}` })
           
         }
         );
