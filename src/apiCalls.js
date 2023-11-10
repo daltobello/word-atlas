@@ -4,13 +4,11 @@ function getWordDefinition(word) {
     if(response.ok) {
       return response
     } else {
-      throw new Error(`${response.status} ${response.statusText}. Something went wrong retrieving the searched word.`)
+      throw new Error(`${response.status}${response.statusText}. Something went wrong retrieving your searched word`)
     }
   })
   .then((response) => response.json())
 }
-
-
 
 function cleanThesaurusData(data) {
   const cleanedData = [];
@@ -47,7 +45,5 @@ function getThesaurus(word) {
   .then((response) => response.json())
   .then((data) => cleanThesaurusData(data))
 }
-
-
 
 export {getWordDefinition, getThesaurus}

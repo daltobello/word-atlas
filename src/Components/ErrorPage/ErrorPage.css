@@ -1,0 +1,10 @@
+.serverError {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 15% .1%;
+}
+
