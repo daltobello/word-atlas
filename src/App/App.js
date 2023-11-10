@@ -2,17 +2,14 @@ import './App.css';
 import "../apiCalls"
 import {useState, useEffect} from "react"
 import {Routes, Route} from "react-router-dom"
-// import getWordDefinition from '../apiCalls';
 import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions';
 import DictionaryContainer from '../Components/DictionaryContainer/DictionaryContainer';
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Navigation from '../Components/Navigation/Navigation';
 import LandingPage from '../Components/LandingPage/LandingPage';
-// import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
-  // const [networkError, setNetworkError] = useState({hasError: false, message: ""})
   const [searchType, setSearchType] = useState("dictionary")
 
 const handleSearch = (searchedWord, searchType) => {
