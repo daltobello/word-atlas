@@ -1,0 +1,15 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.dict-nav-link {
+  padding-right: 3%;
+}
+
+.thes-nav-link {
+  padding-left: 3%;
+}

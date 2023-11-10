@@ -19,7 +19,7 @@ function SearchDefinitions({handleSearch}) {
 // useState here. 
 
   return (
-    <div>
+    <div className="search-container">
       <form className="form-input" onSubmit={handleSubmit}>
         <input 
         type="text"

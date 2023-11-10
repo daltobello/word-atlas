@@ -1,10 +1,10 @@
-import "./WordContainer.css";
+import "./DictionaryContainer.css";
 import Definition from "../Definition/Definition";
 import { useState, useEffect } from "react";
 import { getWordDefinition } from "../../apiCalls";
 import ErrorPage from "../ErrorPage/ErrorPage";
 
-function WordContainer({ selectedWord }) {
+function DictionaryContainer({ selectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
   const [networkError, setNetworkError] = useState({hasError: false, message: ""})
 
@@ -56,4 +56,4 @@ function WordContainer({ selectedWord }) {
   );
 }
 
-export default WordContainer;
+export default DictionaryContainer;
