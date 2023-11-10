@@ -6,7 +6,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 
 function DictionaryContainer({ selectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
-  const [networkError, setNetworkError] = useState({hasError: false, message: ""})
+  const [networkError, setNetworkError] = useState("")
 
   useEffect(() => {
     if (selectedWord) {
@@ -16,8 +16,7 @@ function DictionaryContainer({ selectedWord }) {
         })
         .catch((error) => {
           console.log("error in .catch():", error)
-            setNetworkError({ hasError: true, message: `${error}` })
-          
+            setNetworkError(error.message)
         }
         );
     }
@@ -27,31 +26,30 @@ function DictionaryContainer({ selectedWord }) {
   }, [selectedWord]);
 
   const resetError = () => {
-    setNetworkError({ hasError: false, message: "" });
+    setNetworkError("");
   };
 
   let definitions = [];
-  if (Object.keys(wordDetails).length === 0) {
-    return null;
-  } else {
+  if (Object.keys(wordDetails).length > 0) {
     definitions = wordDetails.meanings.map((definition, index) => {
       return <Definition key={index} definitions={definition} />;
     });
   }
+
   // const phonetic = selectedWord.phonetics[0].audio
 
   return (
-    <div className='upper-section'>
-      {networkError.hasError ? (
+    <div className='word-info-section'>
+      {networkError ? (
         <ErrorPage networkError={networkError} resetError={resetError}/>
-      ) : (
+      ) :  Object.keys(wordDetails).length > 0 ? ( 
         <div className='word'>
           <h1>{wordDetails.word}</h1>
           <p>{wordDetails.phonetic}</p>
           <button className='phonetic-audio-btn'></button>
           {definitions}
         </div>
-      )}
+      ) : null }
     </div>
   );
 }
