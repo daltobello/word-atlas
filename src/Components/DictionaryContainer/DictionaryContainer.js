@@ -29,17 +29,14 @@ function DictionaryContainer({ selectedWord }) {
     setNetworkError("");
   };
 
-  let definitions = [];
-  if (Object.keys(wordDetails).length > 0) {
-    definitions = wordDetails.meanings.map((definition, index) => {
+    const definitions = wordDetails.meanings?.map((definition, index) => {
       return <Definition key={index} definitions={definition} />;
     });
-  }
 
   // const phonetic = selectedWord.phonetics[0].audio
 
   return (
-    <div className='word-info-section'>
+    <section className='definition-section'>
       {networkError ? (
         <ErrorPage networkError={networkError} resetError={resetError}/>
       ) :  Object.keys(wordDetails).length > 0 ? ( 
@@ -50,7 +47,7 @@ function DictionaryContainer({ selectedWord }) {
           {definitions}
         </div>
       ) : null }
-    </div>
+    </section>
   );
 }
 
