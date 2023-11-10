@@ -2,15 +2,15 @@ import "./ErrorPage.css"
 import {Link} from "react-router-dom"
 
 
-function ErrorPage(networkError, resetError) {
-  console.log("inside ErrorPage:", networkError.message)
+function ErrorPage({networkError, resetError}) {
+  console.log("inside ErrorPage:", networkError)
 
-  const errorMessage = networkError&& networkError.message ? networkError.message : "Unknown error occurred."
+//   const errorMessage = networkError&& networkError.message ? networkError.message : "Unknown error occurred."
 
   return (
       <div className="serverError">
-          <p>Oh no! {errorMessage}</p> 
-          <Link to={"/dictionary"} onClick={() => {resetError()}} className="home-link">
+          <p>Oh no! {networkError}</p> 
+          <Link to={"/"} onClick={() => {resetError()}} className="home-link">
               <button className="return-button">Return Home</button>
           </Link>
       </div>
