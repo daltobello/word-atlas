@@ -19,15 +19,33 @@ const handleSearch = (searchedWord, searchType) => {
   setSearchType(searchType)
   setSelectedWord(searchedWord)
 }
- 
+
+const DictionaryRoute = ({ selectedWord, handleSearch }) => (
+  <>
+      <Navigation className="nav-search"/>
+      <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
+      <DictionaryContainer className="word-container" selectedWord={selectedWord} />
+  </>
+);
+
+const ThesaurusRoute = ({ selectedWord, handleSearch }) => (
+  <>
+    <Navigation className="nav-search"/>
+    <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
+    <ThesaurusContainer className="word-container" selectedWord={selectedWord} />
+  </>
+);
+
+
   return (
     <main className="App">
-        <Navigation className="nav-search"/>
-        <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
+        {/* <Navigation className="nav-search"/>
+        <SearchDefinitions className="nav-search" handleSearch={handleSearch}/> */}
       <Routes>
         <Route path="/" element={<LandingPage/>} />
-       <Route path="/dictionary" element={<DictionaryContainer className="word-container" selectedWord={selectedWord} />}/>
-       <Route path="/thesaurus" element={<ThesaurusContainer className="word-container" selectedWord={selectedWord} />}/>
+        <Route path="/dictionary" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} />}/>
+        <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch}/>}/>
+       {/* <Route path='*' element={SameErrorPage} /> */}
       </Routes>
 
     </main>
