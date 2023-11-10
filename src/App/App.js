@@ -7,6 +7,7 @@ import DictionaryContainer from '../Components/DictionaryContainer/DictionaryCon
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Navigation from '../Components/Navigation/Navigation';
 import LandingPage from '../Components/LandingPage/LandingPage';
+import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
@@ -42,7 +43,7 @@ const ThesaurusRoute = ({ selectedWord, handleSearch }) => (
         <Route path="/" element={<LandingPage/>} />
         <Route path="/dictionary" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} />}/>
         <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch}/>}/>
-       {/* <Route path='*' element={SameErrorPage} /> */}
+        <Route path='*' element={<ErrorPage errorMessage="Page Not Found. Please double check the URL." />} />
       </Routes>
 
     </main>
