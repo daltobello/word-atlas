@@ -1,22 +1,31 @@
-import Definition from "../Definition/Definition";
+import "./ThesaurusContainer.css";
 import { useState, useEffect } from "react";
 import { getThesaurus } from "../../apiCalls";
 import ThesaurusDetails from "../ThesaurusDetails/ThesaurusDetails";
-import "./ThesaurusContainer.css";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
-function ThesaurusContainer({ selectedWord, setNetworkError }) {
+function ThesaurusContainer({ selectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
+  const [networkError, setNetworkError] = useState("")
 
   useEffect(() => {
     if (selectedWord) {
       getThesaurus(selectedWord)
         .then((wordDetails) => {
           setWordDetails(wordDetails[0]);
-          // console.log("wordDetails out of fetch", wordDetails[0])
         })
-        .catch((error) => setNetworkError(error.message));
+        .catch((error) => {
+          setNetworkError(error.message)
+        });
     }
+    return () => {
+      resetError();
+    };
   }, [selectedWord]);
+
+  const resetError = () => {
+    setNetworkError("");
+  };
 
   const mapThesaurusWords = (details) => {
     return details.map((detailArr, rIndex) => {
@@ -26,23 +35,26 @@ function ThesaurusContainer({ selectedWord, setNetworkError }) {
     });
   };
 
-  if(Object.keys(wordDetails).length === 0) {
-    return null
-  }
-  const synonymData = mapThesaurusWords(wordDetails.syns)
-  const antonymData = mapThesaurusWords(wordDetails.ants)
+  const synonymData = wordDetails.syns ? mapThesaurusWords(wordDetails.syns) : null
+  const antonymData = wordDetails.ants ? mapThesaurusWords(wordDetails.ants) : null
 
   return (
-    <div>
-      <div className="syns-list">
-        <h3>Synonyms</h3>
-        {synonymData}
+    <section className="thesaurus-section">
+      {networkError ? (
+        <ErrorPage networkError={networkError} resetError={resetError}/>
+      ) :  Object.keys(wordDetails).length > 0 ? (
+      <div className="all-words">
+        <div className="syns-list">
+          <h3>Synonyms</h3>
+          {synonymData}
+        </div>
+        <div className="ants-list">
+          <h3>Antonyms</h3>
+          {antonymData}
+        </div>
       </div>
-      <div className="ants-list">
-        <h3>Antonyms</h3>
-        {antonymData}
-      </div>
-    </div>
+      ) : null }
+    </section>
   );
 }
 
