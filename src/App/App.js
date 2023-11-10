@@ -7,15 +7,12 @@ import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions
 import WordContainer from '../Components/WordContainer/WordContainer';
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Header from '../Components/Header/Header';
+// import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
-  const [selectedWord, setSelectedWord] = useState("") // set state to nothing??
-  const [networkError, setNetworkError] = useState("")
+  const [selectedWord, setSelectedWord] = useState("") 
+  // const [networkError, setNetworkError] = useState({hasError: false, message: ""})
   const [searchType, setSearchType] = useState("dictionary")
-
-  // pass searchType to Thesaurus component 
-  // route for dictionary, route for thesaurus
-
 
 const handleSearch = (searchedWord, searchType) => {
   setSearchType(searchType)
@@ -28,15 +25,12 @@ const handleSearch = (searchedWord, searchType) => {
         <SearchDefinitions handleSearch={handleSearch}/>
       <Routes>
         {/* <Route path="/" element={<SearchDefinitions handleSearch={handleSearch}/>} /> */}
-        <Route  path="/dictionary" element={<WordContainer className="word-container" selectedWord={selectedWord} setNetworkError={setNetworkError}/>}/>
-       <Route path="/thesaurus" element={<ThesaurusContainer className="thesaurus" selectedWord={selectedWord} setNetworkError={setNetworkError}/>}/>
+        <Route  path="/dictionary" element={<WordContainer className="word-container" selectedWord={selectedWord} />}/>
+       <Route path="/thesaurus" element={<ThesaurusContainer className="thesaurus" selectedWord={selectedWord} />}/>
       </Routes>
-    </main>
-  )
-}
-// separate component for thesaurus. pass selectedWord as a string, 
-export default App;
 
-// depending on searchType, route to dictionary or thesaurus. 
-// create homepage, word of the day. 
-// 
+    </main>
+)
+}
+
+export default App;
