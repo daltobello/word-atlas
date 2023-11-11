@@ -1,6 +1,6 @@
 import './App.css';
 import "../apiCalls"
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import {Routes, Route} from "react-router-dom"
 import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions';
 import DictionaryContainer from '../Components/DictionaryContainer/DictionaryContainer';
