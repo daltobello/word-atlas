@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getThesaurus } from "../../apiCalls";
 import ThesaurusDetails from "../ThesaurusDetails/ThesaurusDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import PropTypes from 'prop-types';
 
 function ThesaurusContainer({ selectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
@@ -38,24 +39,38 @@ function ThesaurusContainer({ selectedWord }) {
   const synonymData = wordDetails.syns ? mapThesaurusWords(wordDetails.syns) : null
   const antonymData = wordDetails.ants ? mapThesaurusWords(wordDetails.ants) : null
 
+  const handleUndefinedArray = (array) => {
+    return array.filter(element => element === undefined).length === array.length;
+  };
+  
   return (
     <section className="thesaurus-section">
       {networkError ? (
-        <ErrorPage networkError={networkError} resetError={resetError}/>
-      ) :  Object.keys(wordDetails).length > 0 ? (
-      <div className="all-words">
-        <div className="syns-list">
-          <h3 className="synonym-heading">Synonyms</h3>
-          {synonymData}
+        <ErrorPage networkError={networkError} resetError={resetError} />
+      ) : Object.keys(wordDetails).length > 0 ? (
+        <div className="all-words">
+          <div className="syns-list">
+            <h3 className="synonym-heading">Synonyms</h3>
+            <div className="synonym-cards-container">
+              {synonymData}
+            </div>
+          </div>
+          {handleUndefinedArray(antonymData) ? null : (
+            <div className="ants-list">
+              <h3 className="antonym-heading">Antonyms</h3>
+              <div className="antonym-cards-container">
+                {antonymData}
+              </div>
+            </div>
+          )}
         </div>
-        <div className="ants-list">
-          <h3 className="antonym-heading">Antonyms</h3>
-          {antonymData}
-        </div>
-      </div>
-      ) : null }
+      ) : null}
     </section>
   );
 }
 
 export default ThesaurusContainer;
+
+ThesaurusContainer.propTypes = {
+  selectedWord: PropTypes.string.isRequired
+}

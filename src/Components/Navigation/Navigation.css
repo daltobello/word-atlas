@@ -1,15 +1,13 @@
 .nav-wrapper {
+  height: 10%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 30%;
-  width: 100%;
+  justify-content: center;
+  background: gray;
 }
 
-.dict-nav-link {
-  padding-right: 3%;
-}
-
-.thes-nav-link {
-  padding-left: 3%;
+.nav-link {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0 5%;
 }

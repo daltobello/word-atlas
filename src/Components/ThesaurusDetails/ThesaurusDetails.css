@@ -1,7 +1,23 @@
 .thes-detail-cards {
-  width: 30%;
+  /* width: 30%; */
+  width: fit-content;
+  margin: 5% 0% 5% 0%;
 }
 
-.red-card {
-  background-color: red;
+.dark-gray {
+  background-color: #8b8c89;
+  padding: 3% 5% 3% 5%;
+  border-radius: 8px;
+}
+
+.gray {
+  background-color: #c9c9c9;
+  padding: 3% 5% 3% 5%;
+  border-radius: 8px;
+}
+
+.light-gray {
+  background-color:#f0f0f0;
+  padding: 3% 5% 3% 5%;
+  border-radius: 8px;
 }

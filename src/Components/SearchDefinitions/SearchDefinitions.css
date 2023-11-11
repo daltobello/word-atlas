@@ -1,5 +1,24 @@
-.search-container{
-  /* grid-row: 2;  */
-  display: flex;
-  justify-content: center; 
+.search-container {
+display:flex;
+justify-content: center;
+align-items: center;
+height: 10%;
+}
+
+.form-input {
+  height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+.search-input,
+.submit-search {
+  height: 45%;
+  margin: 0 2%;
+}
+
+.submit-search[disabled] {
+cursor: not-allowed;
 }

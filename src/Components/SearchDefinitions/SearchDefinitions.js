@@ -7,16 +7,8 @@ function SearchDefinitions({handleSearch}) {
   const handleSubmit = (event) => {
     event.preventDefault()
     handleSearch(searchedWord, "dictionary")
-    // clearInput()
   }
 
-  // function clearInput() {
-  //   setSearchedWord("")
-  // }
-
-// searched word state in form, gets passed up to App
-// hold state in form, send to App when invoking search?
-// useState here. 
 
   return (
     <div className="search-container">
@@ -28,7 +20,7 @@ function SearchDefinitions({handleSearch}) {
         value={searchedWord}
         onChange={(event) => setSearchedWord(event.target.value)}
         />
-        <button className="submit-search">Submit</button>
+        <button className="submit-search" disabled={!searchedWord} >Submit</button>
       </form>
     </div>
   )
