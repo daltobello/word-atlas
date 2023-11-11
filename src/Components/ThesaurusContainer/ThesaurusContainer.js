@@ -39,6 +39,10 @@ function ThesaurusContainer({ selectedWord }) {
   const synonymData = wordDetails.syns ? mapThesaurusWords(wordDetails.syns) : null
   const antonymData = wordDetails.ants ? mapThesaurusWords(wordDetails.ants) : null
 
+  const handleUndefinedArray = (array) => {
+    return array.filter(element => element === undefined).length === array.length;
+  };
+  
   return (
     <section className="thesaurus-section">
       {networkError ? (
@@ -51,7 +55,7 @@ function ThesaurusContainer({ selectedWord }) {
               {synonymData}
             </div>
           </div>
-          {antonymData && ( 
+          {handleUndefinedArray(antonymData) ? null : (
             <div className="ants-list">
               <h3 className="antonym-heading">Antonyms</h3>
               <div className="antonym-cards-container">
