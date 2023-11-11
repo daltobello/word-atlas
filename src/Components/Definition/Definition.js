@@ -3,8 +3,6 @@ import "./Definition.css";
 import PropTypes from 'prop-types';
 
 function Definition({ definitions }) {
-
-  console.log("definitions", definitions)
     const wordMeaning = definitions.definitions.map((meaning, index) => {
       return (
         <section key={index} className="definition-container">
@@ -30,13 +28,8 @@ function Definition({ definitions }) {
 export default Definition;
 
 Definition.propTypes = {
-  definitions: PropTypes.arrayOf(
-    PropTypes.shape({
-      definition: PropTypes.string.isRequired,
-      synonyms: PropTypes.array,
-      antonyms: PropTypes.array,
-      example: PropTypes.string.isRequired
+  definitions: PropTypes.shape({
+      definitions: PropTypes.array.isRequired,
+      partOfSpeech: PropTypes.string.isRequired,
     })
-  )
-
 }
