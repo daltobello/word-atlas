@@ -16,19 +16,19 @@ const handleSearch = (searchedWord, searchType) => {
   setSelectedWord(searchedWord)
 }
 
-const DictionaryRoute = ({ selectedWord, handleSearch }) => (
+const DictionaryRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
   <>
       <Navigation className="nav-search"/>
       <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
-      <DictionaryContainer className="word-container" selectedWord={selectedWord} />
+      <DictionaryContainer className="word-container" selectedWord={selectedWord}  setSelectedWord={setSelectedWord}/>
   </>
 );
 
-const ThesaurusRoute = ({ selectedWord, handleSearch }) => (
+const ThesaurusRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
   <>
     <Navigation className="nav-search"/>
     <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
-    <ThesaurusContainer className="word-container" selectedWord={selectedWord} />
+    <ThesaurusContainer className="word-container" selectedWord={selectedWord} setSelectedWord={setSelectedWord} />
   </>
 );
 
@@ -37,8 +37,8 @@ const ThesaurusRoute = ({ selectedWord, handleSearch }) => (
     <main className="App">
       <Routes>
         <Route path="/" element={<LandingPage/>} />
-        <Route path="/dictionary" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} />}/>
-        <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch}/>}/>
+        <Route path="/dictionary" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
+        <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
         <Route path='*' element={<ErrorPage errorMessage="Page Not Found. Please double check the URL." />} />
       </Routes>
     </main>
