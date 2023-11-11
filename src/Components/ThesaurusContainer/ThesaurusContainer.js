@@ -42,19 +42,25 @@ function ThesaurusContainer({ selectedWord }) {
   return (
     <section className="thesaurus-section">
       {networkError ? (
-        <ErrorPage networkError={networkError} resetError={resetError}/>
-      ) :  Object.keys(wordDetails).length > 0 ? (
-      <div className="all-words">
-        <div className="syns-list">
-          <h3 className="synonym-heading">Synonyms</h3>
-          {synonymData}
+        <ErrorPage networkError={networkError} resetError={resetError} />
+      ) : Object.keys(wordDetails).length > 0 ? (
+        <div className="all-words">
+          <div className="syns-list">
+            <h3 className="synonym-heading">Synonyms</h3>
+            <div className="synonym-cards-container">
+              {synonymData}
+            </div>
+          </div>
+          {antonymData && ( 
+            <div className="ants-list">
+              <h3 className="antonym-heading">Antonyms</h3>
+              <div className="antonym-cards-container">
+                {antonymData}
+              </div>
+            </div>
+          )}
         </div>
-        <div className="ants-list">
-          <h3 className="antonym-heading">Antonyms</h3>
-          {antonymData}
-        </div>
-      </div>
-      ) : null }
+      ) : null}
     </section>
   );
 }

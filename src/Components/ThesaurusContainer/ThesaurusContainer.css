@@ -1,6 +1,14 @@
-
-.syns-list {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: yellow;
+.thesaurus-section {
+  margin: 0 auto;
+  max-width: 50%;
 }
+
+.synonym-cards-container, 
+.antonym-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+  margin: 0 10%;
+}
+
