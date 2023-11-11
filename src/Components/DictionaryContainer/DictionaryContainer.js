@@ -3,6 +3,7 @@ import Definition from "../Definition/Definition";
 import { useState, useEffect } from "react";
 import { getWordDefinition } from "../../apiCalls";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import PropTypes from 'prop-types';
 
 function DictionaryContainer({ selectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
@@ -14,10 +15,7 @@ function DictionaryContainer({ selectedWord }) {
         .then((word) => {
           setWordDetails(word[0]);
         })
-        .catch((error) => {
-          console.log("error in .catch():", error)
-            setNetworkError(error.message)
-        }
+        .catch((error) => setNetworkError(error.message)
         );
     }
     return () => {
@@ -52,3 +50,7 @@ function DictionaryContainer({ selectedWord }) {
 }
 
 export default DictionaryContainer;
+
+DictionaryContainer.propTypes = {
+  selectedWord: PropTypes.string.isRequired
+}
