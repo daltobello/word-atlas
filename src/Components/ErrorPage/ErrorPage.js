@@ -15,7 +15,7 @@ function ErrorPage({networkError, resetError, errorMessage}) {
 export default ErrorPage
 
 ErrorPage.propTypes = {
-    networkError: PropTypes.string.isRequired,
-    resetError: PropTypes.func.isRequired,
-    errorMessage: PropTypes.string.isRequired
+    networkError: PropTypes.string,
+    resetError: PropTypes.func,
+    errorMessage: PropTypes.string
   }
