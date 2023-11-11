@@ -31,8 +31,6 @@ function DictionaryContainer({ selectedWord }) {
       return <Definition key={index} definitions={definition} />;
     });
 
-  // const phonetic = selectedWord.phonetics[0].audio
-
   return (
     <div>
       {networkError ? (
@@ -41,7 +39,6 @@ function DictionaryContainer({ selectedWord }) {
         <section className='definition-section'>
           <h2 className="word">{wordDetails.word}</h2>
           <p className="phonetic">{wordDetails.phonetic}</p>
-          {/* <button className='phonetic-audio-btn'></button> */}
           {definitions}
         </section>
       ) : null }
