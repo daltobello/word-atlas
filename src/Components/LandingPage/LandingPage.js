@@ -10,9 +10,9 @@ function LandingPage() {
 
   return (
     <div className="landing-page-container">
-      <h2 onClick={handleWordAtlasClick} style={{ cursor: "pointer" }}>
+      <h1 className="word-atlas" onClick={handleWordAtlasClick} style={{ cursor: "pointer" }}>
         Word Atlas
-      </h2>
+      </h1>
     </div>
   );
 }

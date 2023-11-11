@@ -1,0 +1,1484 @@
+[
+  {
+      "meta": {
+          "id": "particular",
+          "uuid": "bef199d8-afa4-4fce-8217-415f07cc2976",
+          "src": "coll_thes",
+          "section": "alpha",
+          "target": {
+              "tuuid": "8528c5fd-4ead-4cb2-9891-026808ac7623",
+              "tsrc": "collegiate"
+          },
+          "stems": [
+              "particular"
+          ],
+          "syns": [
+              [
+                  "choosy",
+                  "dainty",
+                  "delicate",
+                  "demanding",
+                  "exacting",
+                  "fastidious",
+                  "finical",
+                  "finicking",
+                  "finicky",
+                  "fussbudgety",
+                  "fussy",
+                  "nice",
+                  "old-maidish",
+                  "pernickety",
+                  "persnickety",
+                  "picky"
+              ],
+              [
+                  "idiomatic",
+                  "individual",
+                  "individualized",
+                  "patented",
+                  "peculiar",
+                  "personal",
+                  "personalized",
+                  "private",
+                  "privy",
+                  "separate",
+                  "singular",
+                  "subjective",
+                  "unique"
+              ],
+              [
+                  "choosy",
+                  "picky",
+                  "selective"
+              ],
+              [
+                  "blow-by-blow",
+                  "circumstantial",
+                  "detailed",
+                  "elaborate",
+                  "full",
+                  "minute",
+                  "particularized",
+                  "thorough"
+              ]
+          ],
+          "ants": [
+              [
+                  "undemanding",
+                  "unfastidious",
+                  "unfussy"
+              ],
+              [
+                  "general",
+                  "generic",
+                  "popular",
+                  "public",
+                  "shared",
+                  "universal"
+              ],
+              [
+                  "nonselective",
+                  "unselective"
+              ],
+              [
+                  "compendious",
+                  "summary"
+              ]
+          ],
+          "offensive": false
+      },
+      "hwi": {
+          "hw": "particular"
+      },
+      "fl": "adjective",
+      "def": [
+          {
+              "sseq": [
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "1",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "hard to please "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "she's very {it}particular{/it} about the cleanliness of her car"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "choosy",
+                                          "wvrs": [
+                                              {
+                                                  "wvl": "or",
+                                                  "wva": "choosey"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "wd": "dainty"
+                                      },
+                                      {
+                                          "wd": "delicate"
+                                      },
+                                      {
+                                          "wd": "demanding"
+                                      },
+                                      {
+                                          "wd": "exacting"
+                                      },
+                                      {
+                                          "wd": "fastidious"
+                                      },
+                                      {
+                                          "wd": "finical"
+                                      },
+                                      {
+                                          "wd": "finicking"
+                                      },
+                                      {
+                                          "wd": "finicky"
+                                      },
+                                      {
+                                          "wd": "fussbudgety"
+                                      },
+                                      {
+                                          "wd": "fussy"
+                                      },
+                                      {
+                                          "wd": "nice"
+                                      },
+                                      {
+                                          "wd": "old-maidish"
+                                      },
+                                      {
+                                          "wd": "pernickety",
+                                          "wsls": [
+                                              "chiefly British"
+                                          ]
+                                      },
+                                      {
+                                          "wd": "persnickety"
+                                      },
+                                      {
+                                          "wd": "picky"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "hyperfastidious"
+                                      },
+                                      {
+                                          "wd": "overdemanding"
+                                      },
+                                      {
+                                          "wd": "ultrafastidious"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "discerning"
+                                      },
+                                      {
+                                          "wd": "discriminating"
+                                      },
+                                      {
+                                          "wd": "selective"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "insightful"
+                                      },
+                                      {
+                                          "wd": "knowledgeable"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "captious"
+                                      },
+                                      {
+                                          "wd": "carping"
+                                      },
+                                      {
+                                          "wd": "caviling",
+                                          "wvrs": [
+                                              {
+                                                  "wvl": "or",
+                                                  "wva": "cavilling"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "wd": "critical"
+                                      },
+                                      {
+                                          "wd": "faultfinding"
+                                      },
+                                      {
+                                          "wd": "hypercritical"
+                                      },
+                                      {
+                                          "wd": "overcritical"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "careful"
+                                      },
+                                      {
+                                          "wd": "meticulous"
+                                      },
+                                      {
+                                          "wd": "painstaking"
+                                      },
+                                      {
+                                          "wd": "punctilious"
+                                      },
+                                      {
+                                          "wd": "scrupulous"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "queasy",
+                                          "wvrs": [
+                                              {
+                                                  "wvl": "also",
+                                                  "wva": "queazy"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "wd": "squeamish"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "peevish"
+                                      },
+                                      {
+                                          "wd": "petulant"
+                                      },
+                                      {
+                                          "wd": "prickly"
+                                      },
+                                      {
+                                          "wd": "touchy"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "niminy-piminy"
+                                      },
+                                      {
+                                          "wd": "prim"
+                                      },
+                                      {
+                                          "wd": "prissy"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "affable"
+                                      },
+                                      {
+                                          "wd": "breezy"
+                                      },
+                                      {
+                                          "wd": "carefree"
+                                      },
+                                      {
+                                          "wd": "devil-may-care"
+                                      },
+                                      {
+                                          "wd": "happy-go-lucky"
+                                      },
+                                      {
+                                          "wd": "lackadaisical"
+                                      },
+                                      {
+                                          "wd": "laid-back"
+                                      },
+                                      {
+                                          "wd": "low-pressure"
+                                      },
+                                      {
+                                          "wd": "relaxed"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "flexible"
+                                      },
+                                      {
+                                          "wd": "lax"
+                                      },
+                                      {
+                                          "wd": "loose"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "lenient"
+                                      },
+                                      {
+                                          "wd": "permissive"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "uncritical"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "indiscriminating"
+                                      },
+                                      {
+                                          "wd": "undiscriminating"
+                                      }
+                                  ]
+                              ],
+                              "ant_list": [
+                                  [
+                                      {
+                                          "wd": "undemanding"
+                                      },
+                                      {
+                                          "wd": "unfastidious"
+                                      },
+                                      {
+                                          "wd": "unfussy"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ],
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "2",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "of, relating to, or belonging to a single person "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "that {it}particular{/it} mug is Mike's"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "idiomatic"
+                                      },
+                                      {
+                                          "wd": "individual"
+                                      },
+                                      {
+                                          "wd": "individualized"
+                                      },
+                                      {
+                                          "wd": "patented"
+                                      },
+                                      {
+                                          "wd": "peculiar"
+                                      },
+                                      {
+                                          "wd": "personal"
+                                      },
+                                      {
+                                          "wd": "personalized"
+                                      },
+                                      {
+                                          "wd": "private"
+                                      },
+                                      {
+                                          "wd": "privy"
+                                      },
+                                      {
+                                          "wd": "separate"
+                                      },
+                                      {
+                                          "wd": "singular"
+                                      },
+                                      {
+                                          "wd": "subjective"
+                                      },
+                                      {
+                                          "wd": "unique"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "characteristic"
+                                      },
+                                      {
+                                          "wd": "distinctive"
+                                      },
+                                      {
+                                          "wd": "intimate"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "identifying"
+                                      },
+                                      {
+                                          "wd": "idiosyncratic"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "especial"
+                                      },
+                                      {
+                                          "wd": "express"
+                                      },
+                                      {
+                                          "wd": "special"
+                                      },
+                                      {
+                                          "wd": "specific"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "independent"
+                                      },
+                                      {
+                                          "wd": "nonconformist"
+                                      },
+                                      {
+                                          "wd": "self-directed"
+                                      },
+                                      {
+                                          "wd": "self-sufficient"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "custom"
+                                      },
+                                      {
+                                          "wd": "customized"
+                                      },
+                                      {
+                                          "wd": "specialized"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "broad"
+                                      },
+                                      {
+                                          "wd": "prevailing"
+                                      },
+                                      {
+                                          "wd": "prevalent"
+                                      },
+                                      {
+                                          "wd": "widespread"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "common"
+                                      },
+                                      {
+                                          "wd": "normal"
+                                      },
+                                      {
+                                          "wd": "regular"
+                                      },
+                                      {
+                                          "wd": "typical"
+                                      }
+                                  ]
+                              ],
+                              "ant_list": [
+                                  [
+                                      {
+                                          "wd": "general"
+                                      },
+                                      {
+                                          "wd": "generic"
+                                      },
+                                      {
+                                          "wd": "popular"
+                                      },
+                                      {
+                                          "wd": "public"
+                                      },
+                                      {
+                                          "wd": "shared"
+                                      },
+                                      {
+                                          "wd": "universal"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ],
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "3",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "tending to select carefully "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "he's {it}particular{/it} about the corn he buys"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "choosy",
+                                          "wvrs": [
+                                              {
+                                                  "wvl": "or",
+                                                  "wva": "choosey"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "wd": "picky"
+                                      },
+                                      {
+                                          "wd": "selective"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "nice"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "fastidious"
+                                      },
+                                      {
+                                          "wd": "finical"
+                                      },
+                                      {
+                                          "wd": "finicking"
+                                      },
+                                      {
+                                          "wd": "finicky"
+                                      },
+                                      {
+                                          "wd": "fussy"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "discerning"
+                                      },
+                                      {
+                                          "wd": "discriminating"
+                                      },
+                                      {
+                                          "wd": "judicious"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "indiscriminate"
+                                      },
+                                      {
+                                          "wd": "indiscriminating"
+                                      }
+                                  ]
+                              ],
+                              "ant_list": [
+                                  [
+                                      {
+                                          "wd": "nonselective"
+                                      },
+                                      {
+                                          "wd": "unselective"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ],
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "4",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "including many small descriptive features "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "a very {it}particular{/it} account of the breakdown of their marriage from the husband's perspective"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "blow-by-blow"
+                                      },
+                                      {
+                                          "wd": "circumstantial"
+                                      },
+                                      {
+                                          "wd": "detailed"
+                                      },
+                                      {
+                                          "wd": "elaborate"
+                                      },
+                                      {
+                                          "wd": "full"
+                                      },
+                                      {
+                                          "wd": "minute"
+                                      },
+                                      {
+                                          "wd": "particularized"
+                                      },
+                                      {
+                                          "wd": "thorough"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "enumerated"
+                                      },
+                                      {
+                                          "wd": "inventoried"
+                                      },
+                                      {
+                                          "wd": "itemized"
+                                      },
+                                      {
+                                          "wd": "listed"
+                                      },
+                                      {
+                                          "wd": "numerated"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "delineated"
+                                      },
+                                      {
+                                          "wd": "specific"
+                                      },
+                                      {
+                                          "wd": "specified"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "abundant"
+                                      },
+                                      {
+                                          "wd": "copious"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "comprehensive"
+                                      },
+                                      {
+                                          "wd": "encyclopedic"
+                                      },
+                                      {
+                                          "wd": "exhausting"
+                                      },
+                                      {
+                                          "wd": "exhaustive"
+                                      },
+                                      {
+                                          "wd": "inclusionary"
+                                      },
+                                      {
+                                          "wd": "inclusive"
+                                      },
+                                      {
+                                          "wd": "in-depth"
+                                      },
+                                      {
+                                          "wd": "omnibus"
+                                      },
+                                      {
+                                          "wd": "panoramic"
+                                      },
+                                      {
+                                          "wd": "thoroughgoing"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "accurate"
+                                      },
+                                      {
+                                          "wd": "correct"
+                                      },
+                                      {
+                                          "wd": "exact"
+                                      },
+                                      {
+                                          "wd": "precise"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "complete"
+                                      },
+                                      {
+                                          "wd": "entire"
+                                      },
+                                      {
+                                          "wd": "replete"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "distinct"
+                                      },
+                                      {
+                                          "wd": "explicit"
+                                      },
+                                      {
+                                          "wd": "sharp"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "mapped (out)"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "descriptive"
+                                      },
+                                      {
+                                          "wd": "graphic",
+                                          "wvrs": [
+                                              {
+                                                  "wvl": "also",
+                                                  "wva": "graphical"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "wd": "picturesque"
+                                      },
+                                      {
+                                          "wd": "vivid"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "brief"
+                                      },
+                                      {
+                                          "wd": "compact"
+                                      },
+                                      {
+                                          "wd": "concise"
+                                      },
+                                      {
+                                          "wd": "crisp"
+                                      },
+                                      {
+                                          "wd": "pithy"
+                                      },
+                                      {
+                                          "wd": "short"
+                                      },
+                                      {
+                                          "wd": "succinct"
+                                      },
+                                      {
+                                          "wd": "terse"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "abbreviated"
+                                      },
+                                      {
+                                          "wd": "abridged"
+                                      },
+                                      {
+                                          "wd": "curtailed"
+                                      },
+                                      {
+                                          "wd": "cut"
+                                      },
+                                      {
+                                          "wd": "pruned"
+                                      },
+                                      {
+                                          "wd": "shortened"
+                                      },
+                                      {
+                                          "wd": "trimmed"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "ambiguous"
+                                      },
+                                      {
+                                          "wd": "indeterminate"
+                                      },
+                                      {
+                                          "wd": "nebulous"
+                                      },
+                                      {
+                                          "wd": "nondescript"
+                                      },
+                                      {
+                                          "wd": "sketchy"
+                                      },
+                                      {
+                                          "wd": "vague"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "bird's-eye"
+                                      },
+                                      {
+                                          "wd": "broad"
+                                      },
+                                      {
+                                          "wd": "general"
+                                      },
+                                      {
+                                          "wd": "nonspecific"
+                                      },
+                                      {
+                                          "wd": "overall"
+                                      },
+                                      {
+                                          "wd": "unspecified"
+                                      }
+                                  ]
+                              ],
+                              "ant_list": [
+                                  [
+                                      {
+                                          "wd": "compendious"
+                                      },
+                                      {
+                                          "wd": "summary"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ]
+              ]
+          }
+      ],
+      "shortdef": [
+          "hard to please",
+          "of, relating to, or belonging to a single person",
+          "tending to select carefully"
+      ]
+  },
+  {
+      "meta": {
+          "id": "particular",
+          "uuid": "fbabfc21-cc94-446a-906a-7925155e0f99",
+          "src": "coll_thes",
+          "section": "alpha",
+          "target": {
+              "tuuid": "4efb16a5-c979-45c1-a476-bfe514b044c3",
+              "tsrc": "collegiate"
+          },
+          "stems": [
+              "particular",
+              "particulars"
+          ],
+          "syns": [
+              [
+                  "detail",
+                  "item",
+                  "point"
+              ],
+              [
+                  "datum",
+                  "detail",
+                  "fact",
+                  "nicety",
+                  "particularity",
+                  "point",
+                  "specific"
+              ]
+          ],
+          "ants": [],
+          "offensive": false
+      },
+      "hwi": {
+          "hw": "particular"
+      },
+      "fl": "noun",
+      "def": [
+          {
+              "sseq": [
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "1",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "a separate part in a list, account, or series "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "requested a bill of {it}particulars{/it} for the care he received in the hospital"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "detail"
+                                      },
+                                      {
+                                          "wd": "item"
+                                      },
+                                      {
+                                          "wd": "point"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "article"
+                                      },
+                                      {
+                                          "wd": "belonging"
+                                      },
+                                      {
+                                          "wd": "object"
+                                      },
+                                      {
+                                          "wd": "stuff"
+                                      },
+                                      {
+                                          "wd": "thing"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "characteristic"
+                                      },
+                                      {
+                                          "wd": "component"
+                                      },
+                                      {
+                                          "wd": "constituent"
+                                      },
+                                      {
+                                          "wd": "element"
+                                      },
+                                      {
+                                          "wd": "factor"
+                                      },
+                                      {
+                                          "wd": "feature"
+                                      },
+                                      {
+                                          "wd": "member"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "ingredient"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "division"
+                                      },
+                                      {
+                                          "wd": "particle"
+                                      },
+                                      {
+                                          "wd": "partition"
+                                      },
+                                      {
+                                          "wd": "piece"
+                                      },
+                                      {
+                                          "wd": "portion"
+                                      },
+                                      {
+                                          "wd": "section"
+                                      },
+                                      {
+                                          "wd": "segment"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "aggregate"
+                                      },
+                                      {
+                                          "wd": "composite"
+                                      },
+                                      {
+                                          "wd": "compound"
+                                      },
+                                      {
+                                          "wd": "conglomerate"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "entirety"
+                                      },
+                                      {
+                                          "wd": "sum"
+                                      },
+                                      {
+                                          "wd": "summation"
+                                      },
+                                      {
+                                          "wd": "total"
+                                      },
+                                      {
+                                          "wd": "totality"
+                                      },
+                                      {
+                                          "wd": "whole"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ],
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "2",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "a single piece of information "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "everyone wanted to know all the {it}particulars{/it} about the forthcoming merger"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "datum"
+                                      },
+                                      {
+                                          "wd": "detail"
+                                      },
+                                      {
+                                          "wd": "fact"
+                                      },
+                                      {
+                                          "wd": "nicety"
+                                      },
+                                      {
+                                          "wd": "particularity"
+                                      },
+                                      {
+                                          "wd": "point"
+                                      },
+                                      {
+                                          "wd": "specific"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "article"
+                                      },
+                                      {
+                                          "wd": "item"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "component"
+                                      },
+                                      {
+                                          "wd": "constituent"
+                                      },
+                                      {
+                                          "wd": "element"
+                                      },
+                                      {
+                                          "wd": "ingredient"
+                                      },
+                                      {
+                                          "wd": "member"
+                                      },
+                                      {
+                                          "wd": "part"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "aspect"
+                                      },
+                                      {
+                                          "wd": "circumstance"
+                                      },
+                                      {
+                                          "wd": "facet"
+                                      },
+                                      {
+                                          "wd": "factor"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "evidence"
+                                      },
+                                      {
+                                          "wd": "exhibit"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "database"
+                                      },
+                                      {
+                                          "wd": "information"
+                                      },
+                                      {
+                                          "wd": "knowledge"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "error"
+                                      },
+                                      {
+                                          "wd": "fallacy"
+                                      },
+                                      {
+                                          "wd": "falsehood"
+                                      },
+                                      {
+                                          "wd": "inaccuracy"
+                                      },
+                                      {
+                                          "wd": "misconception"
+                                      },
+                                      {
+                                          "wd": "misstatement"
+                                      },
+                                      {
+                                          "wd": "myth"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ]
+              ]
+          }
+      ],
+      "shortdef": [
+          "a separate part in a list, account, or series",
+          "a single piece of information"
+      ]
+  },
+  {
+      "meta": {
+          "id": "in particular",
+          "uuid": "b06a2d02-e6f4-4d00-915e-c4802042b163",
+          "src": "CTenhance",
+          "section": "phrases",
+          "stems": [
+              "in particular"
+          ],
+          "syns": [
+              [
+                  "especially",
+                  "particularly",
+                  "specifically"
+              ],
+              [
+                  "especially",
+                  "notably",
+                  "particularly",
+                  "specially",
+                  "specifically"
+              ]
+          ],
+          "ants": [
+              [
+                  "generally"
+              ],
+              [
+                  "generally"
+              ]
+          ],
+          "offensive": false
+      },
+      "hwi": {
+          "hw": "in particular"
+      },
+      "fl": "phrase",
+      "def": [
+          {
+              "sseq": [
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "1",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "in the specific case of one person or thing as distinguished from others "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "She prefers white wine, {it}in particular{/it} Pinot Grigio."
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "especially"
+                                      },
+                                      {
+                                          "wd": "particularly"
+                                      },
+                                      {
+                                          "wd": "specifically"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "individually"
+                                      },
+                                      {
+                                          "wd": "personally"
+                                      }
+                                  ],
+                                  [
+                                      {
+                                          "wd": "restrictively"
+                                      },
+                                      {
+                                          "wd": "selectively"
+                                      }
+                                  ]
+                              ],
+                              "phrase_list": [
+                                  [
+                                      {
+                                          "wd": "in especial"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "broadly"
+                                      },
+                                      {
+                                          "wd": "widely"
+                                      }
+                                  ]
+                              ],
+                              "ant_list": [
+                                  [
+                                      {
+                                          "wd": "generally"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ],
+                  [
+                      [
+                          "sense",
+                          {
+                              "sn": "2",
+                              "dt": [
+                                  [
+                                      "text",
+                                      "in regard to something mentioned explicitly or in detail "
+                                  ],
+                                  [
+                                      "vis",
+                                      [
+                                          {
+                                              "t": "Do you have anything {it}in particular{/it} in mind for dinner tonight?"
+                                          }
+                                      ]
+                                  ]
+                              ],
+                              "syn_list": [
+                                  [
+                                      {
+                                          "wd": "especially"
+                                      },
+                                      {
+                                          "wd": "notably"
+                                      },
+                                      {
+                                          "wd": "particularly"
+                                      },
+                                      {
+                                          "wd": "specially"
+                                      },
+                                      {
+                                          "wd": "specifically"
+                                      }
+                                  ]
+                              ],
+                              "rel_list": [
+                                  [
+                                      {
+                                          "wd": "concretely"
+                                      },
+                                      {
+                                          "wd": "expressly"
+                                      }
+                                  ]
+                              ],
+                              "near_list": [
+                                  [
+                                      {
+                                          "wd": "altogether"
+                                      },
+                                      {
+                                          "wd": "basically"
+                                      },
+                                      {
+                                          "wd": "by and large"
+                                      },
+                                      {
+                                          "wd": "chiefly"
+                                      },
+                                      {
+                                          "wd": "largely"
+                                      },
+                                      {
+                                          "wd": "mainly"
+                                      },
+                                      {
+                                          "wd": "mostly"
+                                      },
+                                      {
+                                          "wd": "overall"
+                                      },
+                                      {
+                                          "wd": "predominantly"
+                                      },
+                                      {
+                                          "wd": "primarily"
+                                      },
+                                      {
+                                          "wd": "principally"
+                                      },
+                                      {
+                                          "wd": "substantially"
+                                      }
+                                  ]
+                              ],
+                              "ant_list": [
+                                  [
+                                      {
+                                          "wd": "generally"
+                                      }
+                                  ]
+                              ]
+                          }
+                      ]
+                  ]
+              ]
+          }
+      ],
+      "shortdef": [
+          "in the specific case of one person or thing as distinguished from others",
+          "in regard to something mentioned explicitly or in detail"
+      ]
+  }
+]

@@ -36,18 +36,18 @@ function DictionaryContainer({ selectedWord }) {
   // const phonetic = selectedWord.phonetics[0].audio
 
   return (
-    <section className='definition-section'>
+    <div>
       {networkError ? (
         <ErrorPage networkError={networkError} resetError={resetError}/>
       ) :  Object.keys(wordDetails).length > 0 ? ( 
-        <div className='word'>
-          <h1>{wordDetails.word}</h1>
-          <p>{wordDetails.phonetic}</p>
-          <button className='phonetic-audio-btn'></button>
+        <section className='definition-section'>
+          <h2 className="word">{wordDetails.word}</h2>
+          <p className="phonetic">{wordDetails.phonetic}</p>
+          {/* <button className='phonetic-audio-btn'></button> */}
           {definitions}
-        </div>
+        </section>
       ) : null }
-    </section>
+    </div>
   );
 }
 

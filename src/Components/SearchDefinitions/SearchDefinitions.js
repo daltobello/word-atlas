@@ -21,9 +21,9 @@ function SearchDefinitions({handleSearch}) {
   return (
     <div className="search-container">
       <form className="form-input" onSubmit={handleSubmit}>
-        <input 
+        <input className="search-input"
         type="text"
-        name="word"
+        name="word-search"
         placeholder="Search for a word..."
         value={searchedWord}
         onChange={(event) => setSearchedWord(event.target.value)}

@@ -4,7 +4,7 @@ function getWordDefinition(word) {
     if(response.ok) {
       return response
     } else {
-      throw new Error(`${response.status}${response.statusText}. Something went wrong retrieving your searched word`)
+      throw new Error(`${response.status} ${response.statusText}. Something went wrong retrieving your searched word`)
     }
   })
   .then((response) => response.json())
