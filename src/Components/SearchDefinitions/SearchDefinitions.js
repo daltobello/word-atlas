@@ -19,7 +19,6 @@ function SearchDefinitions({handleSearch}) {
         placeholder="Search for a word..."
         value={searchedWord}
         onChange={(event) => setSearchedWord(event.target.value)}
-        // required
         />
         <button className="submit-search" disabled={!searchedWord} >Submit</button>
       </form>

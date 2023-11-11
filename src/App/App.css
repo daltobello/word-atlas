@@ -1,29 +1,13 @@
 
-* {
+/* * {
   border: solid 1px green; 
-}
+} */
 
 
 .App {
-  display: grid;
-  grid-template-rows: auto auto auto; 
-  gap: 20px; 
-  background-color: #f0f0f0;
-  padding-top: 3%;
-  padding-left: 18%;
-  padding-right: 18%;
+  height: 100vh;
 }
 
-.navigation {
-  grid-row: 1; /* Places .navigation in the first row */
-}
-
-.search {
-  grid-row: 2; /* Places .search in the second row */
-  justify-self: center; /* Center .search horizontally */
-}
-
-.word-container {
-  grid-row: 3; /* Places .word-container in the third row */
-  justify-self: center; /* Center .word-container horizontally */
+p {
+  margin: 0;
 }
