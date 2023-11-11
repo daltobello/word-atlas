@@ -5,7 +5,7 @@ import { getWordDefinition } from "../../apiCalls";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PropTypes from 'prop-types';
 
-function DictionaryContainer({ selectedWord }) {
+function DictionaryContainer({ selectedWord, setSelectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
   const [networkError, setNetworkError] = useState("")
 
@@ -34,7 +34,7 @@ function DictionaryContainer({ selectedWord }) {
   return (
     <div>
       {networkError ? (
-        <ErrorPage networkError={networkError} resetError={resetError}/>
+        <ErrorPage networkError={networkError} resetError={resetError}  setSelectedWord={ setSelectedWord}/>
       ) :  Object.keys(wordDetails).length > 0 ? ( 
         <section className='definition-section'>
           <h2 className="word">{wordDetails.word}</h2>
