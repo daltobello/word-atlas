@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getThesaurus } from "../../apiCalls";
 import ThesaurusDetails from "../ThesaurusDetails/ThesaurusDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import PropTypes from 'prop-types';
 
 function ThesaurusContainer({ selectedWord }) {
   const [wordDetails, setWordDetails] = useState({});
@@ -59,3 +60,7 @@ function ThesaurusContainer({ selectedWord }) {
 }
 
 export default ThesaurusContainer;
+
+ThesaurusContainer.propTypes = {
+  selectedWord: PropTypes.string.isRequired
+}
