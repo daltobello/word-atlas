@@ -8,7 +8,7 @@ function ThesaurusDetails({detail, rIndex}) {
   }
   return (
     <div className={`thes-detail-cards ${cardClass}`}>
-      <p>{detail}</p>
+      <p className="thes-word">{detail}</p>
     </div>
   )
 }

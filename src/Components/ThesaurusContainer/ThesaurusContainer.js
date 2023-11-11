@@ -45,11 +45,11 @@ function ThesaurusContainer({ selectedWord }) {
       ) :  Object.keys(wordDetails).length > 0 ? (
       <div className="all-words">
         <div className="syns-list">
-          <h3>Synonyms</h3>
+          <h3 className="synonym-heading">Synonyms</h3>
           {synonymData}
         </div>
         <div className="ants-list">
-          <h3>Antonyms</h3>
+          <h3 className="antonym-heading">Antonyms</h3>
           {antonymData}
         </div>
       </div>
