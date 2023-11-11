@@ -1,5 +1,6 @@
 import "./ErrorPage.css"
 import {Link} from "react-router-dom"
+import PropTypes from 'prop-types';
 
 function ErrorPage({networkError, resetError, errorMessage}) {
   return (
@@ -12,3 +13,9 @@ function ErrorPage({networkError, resetError, errorMessage}) {
   )
 }
 export default ErrorPage
+
+ErrorPage.propTypes = {
+    networkError: PropTypes.string,
+    resetError: PropTypes.func,
+    errorMessage: PropTypes.string
+  }

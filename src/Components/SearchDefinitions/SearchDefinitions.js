@@ -1,12 +1,13 @@
 import "./SearchDefinitions.css"
-import {useState, useEffect} from "react"
+import {useState} from "react"
+import PropTypes from 'prop-types';
 
 function SearchDefinitions({handleSearch}) {
   const [searchedWord, setSearchedWord] = useState("")
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    handleSearch(searchedWord, "dictionary")
+    handleSearch(searchedWord)
   }
 
 
@@ -27,3 +28,7 @@ function SearchDefinitions({handleSearch}) {
 }
 
 export default SearchDefinitions
+
+SearchDefinitions.propTypes = { 
+  handleSearch: PropTypes.func.isRequired,
+}

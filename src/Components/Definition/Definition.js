@@ -1,5 +1,6 @@
 import React from "react";
 import "./Definition.css";
+import PropTypes from 'prop-types';
 
 function Definition({ definitions }) {
     const wordMeaning = definitions.definitions.map((meaning, index) => {
@@ -25,3 +26,10 @@ function Definition({ definitions }) {
 }
 
 export default Definition;
+
+Definition.propTypes = {
+  definitions: PropTypes.shape({
+      definitions: PropTypes.array.isRequired,
+      partOfSpeech: PropTypes.string.isRequired,
+    })
+}

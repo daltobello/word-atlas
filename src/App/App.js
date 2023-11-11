@@ -1,6 +1,6 @@
 import './App.css';
 import "../apiCalls"
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import {Routes, Route} from "react-router-dom"
 import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions';
 import DictionaryContainer from '../Components/DictionaryContainer/DictionaryContainer';
@@ -11,10 +11,8 @@ import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
-  const [searchType, setSearchType] = useState("dictionary")
 
 const handleSearch = (searchedWord, searchType) => {
-  setSearchType(searchType)
   setSelectedWord(searchedWord)
 }
 
@@ -37,15 +35,12 @@ const ThesaurusRoute = ({ selectedWord, handleSearch }) => (
 
   return (
     <main className="App">
-        {/* <Navigation className="nav-search"/>
-        <SearchDefinitions className="nav-search" handleSearch={handleSearch}/> */}
       <Routes>
         <Route path="/" element={<LandingPage/>} />
         <Route path="/dictionary" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} />}/>
         <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch}/>}/>
         <Route path='*' element={<ErrorPage errorMessage="Page Not Found. Please double check the URL." />} />
       </Routes>
-
     </main>
 )
 }
