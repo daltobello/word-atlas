@@ -11,10 +11,8 @@ import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
-  const [searchType, setSearchType] = useState("dictionary")
 
 const handleSearch = (searchedWord, searchType) => {
-  setSearchType(searchType)
   setSelectedWord(searchedWord)
 }
 
