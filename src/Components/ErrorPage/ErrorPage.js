@@ -17,5 +17,6 @@ export default ErrorPage
 ErrorPage.propTypes = {
     networkError: PropTypes.string,
     resetError: PropTypes.func,
-    errorMessage: PropTypes.string
+    errorMessage: PropTypes.string,
+    setSelectedWord: PropTypes.func
   }
