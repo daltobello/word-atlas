@@ -7,7 +7,6 @@ function SearchDefinitions({handleSearch}) {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log("searched word", searchedWord)
     handleSearch(searchedWord)
   }
 
