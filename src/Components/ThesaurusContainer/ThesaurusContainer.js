@@ -5,7 +5,7 @@ import ThesaurusDetails from "../ThesaurusDetails/ThesaurusDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PropTypes from 'prop-types';
 
-function ThesaurusContainer({ selectedWord }) {
+function ThesaurusContainer({ selectedWord, setSelectedWord}) {
   const [wordDetails, setWordDetails] = useState({});
   const [networkError, setNetworkError] = useState("")
 
@@ -48,7 +48,7 @@ function ThesaurusContainer({ selectedWord }) {
   return (
     <section className="thesaurus-section">
       {networkError ? (
-        <ErrorPage networkError={networkError} resetError={resetError} />
+        <ErrorPage networkError={networkError} resetError={resetError} setSelectedWord={ setSelectedWord}/>
       ) : Object.keys(wordDetails).length > 0 ? (
         <div className="all-words">
           {handleUndefinedArray(synonymData) ? null : (

@@ -9,14 +9,15 @@ describe("thesaurus search error handling", () => {
   .visit("http://localhost:3000/thesaurus")
 })
 
-  it("should display server error message for thesaurus search" , () => {
+  it.only("should display server error message for thesaurus search" , () => {
     cy.get('input[name="word-search"]').type("particular").should("have.value", "particular")
     .get('.submit-search').click()
     cy.wait("@getThesaurusSearch")
     .get('.error-message').should("be.visible")
     .get('.error-message').contains("Oh no! 404 Not Found. Something went wrong retrieving the searched word.. Please try again.")
     .get('.return-button').should("be.visible")
-    .get('.return-button').click().url().should('eq', 'http://localhost:3000/')
+    .get('.return-button').click()
+    .url().should('eq', 'http://localhost:3000/')
     })
 })
 
