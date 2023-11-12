@@ -4,3 +4,8 @@
   max-width: 50%;
 }
 
+@media only screen and (max-width: 540px) {
+  .definition-section {
+    max-width: 70%;
+  }
+}
