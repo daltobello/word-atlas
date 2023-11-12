@@ -49,5 +49,6 @@ function DictionaryContainer({ selectedWord, setSelectedWord }) {
 export default DictionaryContainer;
 
 DictionaryContainer.propTypes = {
-  selectedWord: PropTypes.string.isRequired
+  selectedWord: PropTypes.string.isRequired, 
+  setSelectedWord: PropTypes.func.isRequired
 }

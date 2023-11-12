@@ -12,7 +12,7 @@ import ErrorPage from '../Components/ErrorPage/ErrorPage';
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
 
-const handleSearch = (searchedWord, searchType) => {
+const handleSearch = (searchedWord) => {
   setSelectedWord(searchedWord)
 }
 
