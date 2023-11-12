@@ -12,17 +12,19 @@ function ThesaurusContainer({ selectedWord }) {
   useEffect(() => {
     if (selectedWord) {
       getThesaurus(selectedWord)
-        .then((wordDetails) => {
-          setWordDetails(wordDetails[0]);
-        })
+        .then((wordData) => setWordDetails(wordData[0]))
         .catch((error) => {
-          setNetworkError(error.message)
+          setNetworkError(error.message);
         });
     }
     return () => {
       resetError();
     };
   }, [selectedWord]);
+
+  if (wordDetails === undefined) {
+    return null
+  }
 
   const resetError = () => {
     setNetworkError("");
@@ -36,12 +38,12 @@ function ThesaurusContainer({ selectedWord }) {
     });
   };
 
-  const synonymData = wordDetails.syns ? mapThesaurusWords(wordDetails.syns) : null
-  const antonymData = wordDetails.ants ? mapThesaurusWords(wordDetails.ants) : null
+    const synonymData = wordDetails.syns && Array.isArray(wordDetails.syns) ? mapThesaurusWords(wordDetails.syns) : null;
+    const antonymData = wordDetails.ants && Array.isArray(wordDetails.ants) ? mapThesaurusWords(wordDetails.ants) : null;
 
-  const handleUndefinedArray = (array) => {
-    return array.filter(element => element === undefined).length === array.length;
-  };
+    const handleUndefinedArray = (array) => {
+      return array.filter((element) => element === undefined).length === array.length;
+    };
   
   return (
     <section className="thesaurus-section">
@@ -49,12 +51,14 @@ function ThesaurusContainer({ selectedWord }) {
         <ErrorPage networkError={networkError} resetError={resetError} />
       ) : Object.keys(wordDetails).length > 0 ? (
         <div className="all-words">
+          {handleUndefinedArray(synonymData) ? null : (
           <div className="syns-list">
             <h3 className="synonym-heading">Synonyms</h3>
             <div className="synonym-cards-container">
               {synonymData}
             </div>
           </div>
+          )}
           {handleUndefinedArray(antonymData) ? null : (
             <div className="ants-list">
               <h3 className="antonym-heading">Antonyms</h3>
