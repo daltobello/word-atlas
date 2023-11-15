@@ -6,7 +6,6 @@ import SearchDefinitions from '../Components/SearchDefinitions/SearchDefinitions
 import DictionaryContainer from '../Components/DictionaryContainer/DictionaryContainer';
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Navigation from '../Components/Navigation/Navigation';
-import LandingPage from '../Components/LandingPage/LandingPage';
 import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 function App() {
@@ -32,11 +31,9 @@ const ThesaurusRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
   </>
 );
 
-
   return (
     <main className="App">
       <Routes>
-        {/* <Route path="/" element={<LandingPage/>} /> */}
         <Route path="/" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
         <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
         <Route path='*' element={<ErrorPage errorMessage="Page Not Found. Please double check the URL." />} />

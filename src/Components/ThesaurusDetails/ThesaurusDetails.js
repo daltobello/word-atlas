@@ -2,9 +2,7 @@ import "./ThesaurusDetails.css"
 import PropTypes from "prop-types"
 
 function ThesaurusDetails({detail, rIndex, selectedWord}) {
-
-  console.log("selectedWord insideThesaurusDetails", selectedWord)
-
+  
   let cardClass = ""
   if(rIndex === 0) {
     cardClass = "dark-gray"
