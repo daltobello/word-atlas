@@ -1,7 +1,9 @@
 import "./ThesaurusDetails.css"
 import PropTypes from "prop-types"
 
-function ThesaurusDetails({detail, rIndex}) {
+function ThesaurusDetails({detail, rIndex, selectedWord}) {
+
+  console.log("selectedWord insideThesaurusDetails", selectedWord)
 
   let cardClass = ""
   if(rIndex === 0) {
@@ -14,6 +16,9 @@ function ThesaurusDetails({detail, rIndex}) {
 
   return (
     <div className={`thes-detail-cards ${cardClass}`}>
+      <div >
+        <div className="thes-word">{selectedWord}</div>
+      </div>
       <p className="thes-word">{detail}</p>
     </div>
   )

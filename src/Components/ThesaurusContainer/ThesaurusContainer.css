@@ -12,6 +12,11 @@
   margin: 0 10%;
 }
 
+.thes-word-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 @media only screen and (max-width: 940px) {
   .synonym-cards-container,
   .antonym-cards-container {
