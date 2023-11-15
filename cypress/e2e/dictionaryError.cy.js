@@ -6,7 +6,7 @@ describe("dictionary server error", () => {
        body: "",
       }
     ).as("getDictionarySearch")
-    .visit("http://localhost:3000/dictionary")
+    .visit("http://localhost:3000/")
   })
 
   it("should display server error message for dictionary search" , () => {
@@ -28,7 +28,7 @@ describe("dictionary server error", () => {
        body: "",
       }
     ).as("getDictionarySearch")
-    .visit("http://localhost:3000/dictionary")
+    .visit("http://localhost:3000/")
   })
     it("should display error message when user types non-word into search", () => {
       cy.get('input[name="word-search"]').type("asdadsf").should("have.value", "asdadsf")
