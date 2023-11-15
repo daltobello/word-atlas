@@ -13,7 +13,7 @@
   text-decoration: none;
 }
 
-.active-link {
+.nav-link.active-link {
   color: rgb(162, 18, 18);
   text-decoration:underline;
   background-color: white;
