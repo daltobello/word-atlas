@@ -28,8 +28,6 @@ function cleanThesaurusData(data) {
     };
     cleanedData.push(cleanedItem);
   });
-  console.log("cleanedData", cleanedData)
-
   return cleanedData;
 }
 
@@ -44,7 +42,6 @@ function getThesaurus(word) {
   })
   .then((response) => response.json())
   .then((data) => {
-    console.log("data", data)
     return cleanThesaurusData(data)
   })
     

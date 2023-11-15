@@ -12,21 +12,16 @@ function ThesaurusContainer({ selectedWord, setSelectedWord}) {
 
   useEffect(() => {
     if (selectedWord) {
-      console.log("selected word", selectedWord)
       getThesaurus(selectedWord)
         .then((wordData) => {
-          // console.log("wordData[0]", wordData[0])
         if(wordData[0] === undefined) {
-          console.log("no results")
           setNoResults(true)
         } else {
-          console.log("are you here?")
           setNoResults(false)
           setWordDetails(wordData[0])
         }
         })
         .catch((error) => {
-          console.log("hitting catch")
           setNetworkError(error.message);
         });
     }
@@ -49,8 +44,6 @@ function ThesaurusContainer({ selectedWord, setSelectedWord}) {
 
     const synonymData = wordDetails.syns && Array.isArray(wordDetails.syns) ? mapThesaurusWords(wordDetails.syns) : null;
     const antonymData = wordDetails.ants && Array.isArray(wordDetails.ants) ? mapThesaurusWords(wordDetails.ants) : null;
-
-    console.log("antonymData", antonymData)
 
     const renderSelectedWord = () => {
       return <p>{selectedWord}</p>

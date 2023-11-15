@@ -9,17 +9,12 @@ function ErrorPage({networkError, resetError, errorMessage, setSelectedWord}) {
 
   const handleError = () => {
     if(!resetError && !setSelectedWord) {
-      // console.log(window.location.pathname)
       navigate(-1)
-// if path name includes "thesaurus" nav to "thesaurus" else nav to "dict"
-// put slash after thesaurus. then split. 
     } else {
       resetError()
       setSelectedWord()
     }
   }
-
-
 
   return (
       <div className="serverError">
