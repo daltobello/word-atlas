@@ -7,7 +7,14 @@
 }
 
 .nav-link {
-  color: black;
+  /* color: black; */
   font-size: 1.5rem;
   margin: 0 5%;
+  text-decoration: none;
+}
+
+.nav-link.active-link {
+  color: rgb(162, 18, 18);
+  text-decoration:underline;
+  background-color: white;
 }

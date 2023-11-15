@@ -33,7 +33,7 @@ function ThesaurusContainer({ selectedWord, setSelectedWord}) {
   const mapThesaurusWords = (details) => {
     return details.map((detailArr, rIndex) => {
       return detailArr?.map((detail, index) => (
-        <ThesaurusDetails key={index} detail={detail} rIndex={rIndex} />
+        <ThesaurusDetails key={index} detail={detail} rIndex={rIndex}/>
       ));
     });
   };
@@ -44,6 +44,10 @@ function ThesaurusContainer({ selectedWord, setSelectedWord}) {
     const handleUndefinedArray = (array) => {
       return array.filter((element) => element === undefined).length === array.length;
     };
+
+    const renderSelectedWord = () => {
+      return <p>{selectedWord}</p>
+    }
   
   return (
     <section className="thesaurus-section">
@@ -53,6 +57,7 @@ function ThesaurusContainer({ selectedWord, setSelectedWord}) {
         <div className="all-words">
           {handleUndefinedArray(synonymData) ? null : (
           <div className="syns-list">
+            <h2 className="thes-word-container">{renderSelectedWord()}</h2>
             <h3 className="synonym-heading">Synonyms</h3>
             <div className="synonym-cards-container">
               {synonymData}
