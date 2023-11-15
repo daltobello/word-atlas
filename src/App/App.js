@@ -36,8 +36,8 @@ const ThesaurusRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
   return (
     <main className="App">
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/dictionary" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
+        {/* <Route path="/" element={<LandingPage/>} /> */}
+        <Route path="/" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
         <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
         <Route path='*' element={<ErrorPage errorMessage="Page Not Found. Please double check the URL." />} />
       </Routes>

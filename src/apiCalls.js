@@ -12,7 +12,6 @@ function getWordDefinition(word) {
 
 function cleanThesaurusData(data) {
   const cleanedData = [];
-
   data.forEach(item => {
     const cleanedItem = {
       stems: item.meta.stems[0],
@@ -29,6 +28,7 @@ function cleanThesaurusData(data) {
     };
     cleanedData.push(cleanedItem);
   });
+  console.log("cleanedData", cleanedData)
 
   return cleanedData;
 }
@@ -43,7 +43,11 @@ function getThesaurus(word) {
     }
   })
   .then((response) => response.json())
-  .then((data) => cleanThesaurusData(data))
+  .then((data) => {
+    console.log("data", data)
+    return cleanThesaurusData(data)
+  })
+    
 }
 
 export {getWordDefinition, getThesaurus}
