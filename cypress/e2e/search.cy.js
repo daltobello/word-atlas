@@ -7,9 +7,16 @@ describe("dictionary search", () => {
         }
       ).as("getDictionarySearch")
       .visit("http://localhost:3000/")
+
+      cy.intercept("GET", "https://dictionaryapi.com/api/v3/references/thesaurus/json/particular?key=a3ed202f-4c0b-419f-867c-5c7b3856fc95",
+      {
+        statusCode: 200,
+        fixture: "thesaurusWord",
+      }
+      ).as("getThesaurusSearch")
     })
 
-  it("should display the results of a dictionary search" , () => {
+  it.only("should display the results of a dictionary search and navigate to thesaurus results and back" , () => {
     cy.get('input[name="word-search"]').type("particular").should("have.value", "particular")
     .get('.submit-search').click()
     cy.wait("@getDictionarySearch")
@@ -42,26 +49,19 @@ describe("dictionary search", () => {
     .get(':nth-child(11) > .example').contains("a particular tenant")
     .get(':nth-child(12) > ul > .definition').contains("Forming a part of a genus; relatively limited in extension; affirmed or denied of a part of a subject.")
     .get(':nth-child(12) > .example').should("exist")
-  })
 
-  it("should display the results of a thesaurus search" , () => {
-    cy.intercept("GET", "https://dictionaryapi.com/api/v3/references/thesaurus/json/particular?key=a3ed202f-4c0b-419f-867c-5c7b3856fc95",
-  {
-    statusCode: 200,
-    fixture: "thesaurusWord",
-  }
-  ).as("getThesaurusSearch")
-  .visit("http://localhost:3000/thesaurus")
-
-    cy.get('input[name="word-search"]').type("particular").should("have.value", "particular")
-    .get('.submit-search').click()
+    .get('.nav-link').eq(1).should("have.text", "Thesaurus").click()
     cy.wait("@getThesaurusSearch")
-   .get('.syns-list').should("exist")
+    .url().should('eq', 'http://localhost:3000/thesaurus')
+    .get('.thes-word-container').find("p").should("have.text", "particular")
+    .get('.syns-list').should("exist")
    .get('.syns-list').find(".synonym-heading").contains("Synonyms")
    .get('.syns-list').first().contains("choosy")
    .get('.syns-list').last().contains("selective")
    .get('.ants-list').find(".antonym-heading").contains("Antonyms")
    .get('.ants-list').first().contains("undemanding")
    .get('.ants-list').last().contains("unselective")
-    })
+   .get('.nav-link').eq(0).should("have.text", "Dictionary").click()
+   .url().should('eq', 'http://localhost:3000/')
+  })
 })
