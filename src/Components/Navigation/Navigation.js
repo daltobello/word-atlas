@@ -4,10 +4,10 @@ import { Router, NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <nav className="nav-wrapper">
-        <NavLink to={"/dictionary"} className="nav-link" activeClassName="active-link">
+        <NavLink to={"/"} className="nav-link" activeclassname="active-link">
           Dictionary
         </NavLink>
-        <NavLink to={"/thesaurus"} className="nav-link" activeClassName="active-link">
+        <NavLink to={"/thesaurus"} className="nav-link" activeclassname="active-link">
           Thesaurus
         </NavLink>
     </nav>
