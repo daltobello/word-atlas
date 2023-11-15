@@ -6,7 +6,7 @@ describe("dictionary search", () => {
           fixture: "dictionaryWord",
         }
       ).as("getDictionarySearch")
-      .visit("http://localhost:3000/dictionary")
+      .visit("http://localhost:3000/")
     })
 
   it("should display the results of a dictionary search" , () => {
