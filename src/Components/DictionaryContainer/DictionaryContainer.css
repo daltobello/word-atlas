@@ -4,6 +4,25 @@
   max-width: 50%;
 }
 
+.phonetic {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.part-of-speech {
+color: #52796f;
+font-family: var(--font-headings-primary);
+font-size: 1.6rem;
+font-weight: 700;
+padding-bottom: 4%;
+padding-top: 4%;
+}
+
+.example {
+  color: gray;
+  padding-left: 36px;
+}
+
 @media only screen and (max-width: 540px) {
   .definition-section {
     max-width: 70%;

@@ -3,6 +3,35 @@
   border: solid 1px green; 
 } */
 
+:root {
+  --font-headings-primary: "Fjalla One", sans-serif;
+  --font-weight-headings-primary: 400;
+  --font-style-headings-primary: normal;
+  --headings-primary-size: 2.9em;
+
+  --font-body-primary: Futura, sans-serif;
+  --font-weight-body-primary: 400;
+  --font-weight-body-primary-bold: 600;
+  --font-weight-body-primary-medium: 500;
+  --font-style-body-primary: normal;
+
+  
+  --search-input-background: rgb(233, 233, 233);
+  --search-input-text-primary: black;
+
+  /* --font-weight-menu: var(--font-weight-body-primary-medium);
+  --font-weight-buttons: var(--font-weight-body-primary-medium);
+  --base-headings-primary-size: 79;
+  --base-headings-line: 1;
+  --base-headings-spacing: 0.01rem;
+
+  --color-background-header: #ffffff;
+  --color-text-header: #000000;
+  --color-foreground-header: #fff;
+  --color-borders-header: rgba(0, 0, 0, 0.15);
+
+  --color-text-main: #000000; */
+}
 
 .App {
   height: 100vh;
@@ -10,4 +39,15 @@
 
 p {
   margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--font-headings-primary);
+  font-weight: var(--font-weight-headings-primary);
+  /* font-style: var(--font-style-headings-primary); */
+  line-height: var(--base-headings-line);
+  letter-spacing: var(--base-headings-spacing);
+  margin-bottom: 1rem;
+  font-size: var(--headings-primary-size);
 }
