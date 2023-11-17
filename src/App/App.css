@@ -4,13 +4,13 @@
 } */
 
 :root {
-  --font-headings-primary: "Fjalla One", sans-serif;
-  --font-weight-headings-primary: 400;
+  --font-headings-primary: "Inter", sans-serif;
+  --font-weight-headings-primary: 600;
   --font-style-headings-primary: normal;
-  --headings-primary-size: 2.9em;
+  --headings-primary-size: 3.2em;
 
-  --font-body-primary: Futura, sans-serif;
-  --font-weight-body-primary: 400;
+  --font-body-primary: "Inter", sans-serif;
+  --font-weight-body-primary: 200;
   --font-weight-body-primary-bold: 600;
   --font-weight-body-primary-medium: 500;
   --font-style-body-primary: normal;
@@ -22,15 +22,15 @@
   /* --font-weight-menu: var(--font-weight-body-primary-medium);
   --font-weight-buttons: var(--font-weight-body-primary-medium);
   --base-headings-primary-size: 79;
-  --base-headings-line: 1;
-  --base-headings-spacing: 0.01rem;
+  --base-headings-line: 1; */
+  /* --base-headings-spacing: 0.01rem; */
 
   --color-background-header: #ffffff;
   --color-text-header: #000000;
   --color-foreground-header: #fff;
   --color-borders-header: rgba(0, 0, 0, 0.15);
 
-  --color-text-main: #000000; */
+  --color-text-main: #000000;
 }
 
 .App {
@@ -45,9 +45,12 @@ h1,
 h2 {
   font-family: var(--font-headings-primary);
   font-weight: var(--font-weight-headings-primary);
-  /* font-style: var(--font-style-headings-primary); */
+  font-style: var(--font-style-headings-primary);
   line-height: var(--base-headings-line);
-  letter-spacing: var(--base-headings-spacing);
+  /* letter-spacing: var(--base-headings-spacing); */
   margin-bottom: 1rem;
   font-size: var(--headings-primary-size);
 }
+
+
+

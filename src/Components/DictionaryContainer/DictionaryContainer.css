@@ -4,16 +4,24 @@
   max-width: 50%;
 }
 
+.phonetic, 
+.part-of-speech, 
+.meaning, 
+.definition,
+.example {
+  font-family: var( --font-body-primary);
+  font-size: 1.2rem;
+}
+
 .phonetic {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 0;
 }
 
 .part-of-speech {
 color: #52796f;
-font-family: var(--font-headings-primary);
 font-size: 1.6rem;
-font-weight: 700;
+font-weight: 600;
 padding-bottom: 4%;
 padding-top: 4%;
 }
