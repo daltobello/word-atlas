@@ -10,10 +10,11 @@
   --headings-primary-size: 3.2em;
 
   --font-body-primary: "Inter", sans-serif;
-  --font-weight-body-primary: 200;
+  --font-weight-body-primary: 500;
   --font-weight-body-primary-bold: 600;
   --font-weight-body-primary-medium: 500;
   --font-style-body-primary: normal;
+  --font-weight-body-secondary: 400;
 
   
   --search-input-background: rgb(233, 233, 233);
