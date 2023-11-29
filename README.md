@@ -9,8 +9,8 @@ This application caters to individuals aiming to enhance their English proficien
 
 ### Preview
 
-<img width="1434" alt="Screenshot 2023-11-11 at 9 26 07 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/a7fcc2e7-6c7b-46df-ae2a-4fdcf294b921">
-<img width="1426" alt="Screenshot 2023-11-11 at 9 25 59 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/1ee3aa9a-d604-404f-a327-01f1dcac7b71">
+<img width="1291" alt="Screenshot 2023-11-29 at 8 53 04 AM" src="https://user-images.githubusercontent.com/130494366/286616735-7a47755d-b796-4511-a80b-3a06d51d3aa0.png">
+<img width="1292" alt="Screenshot 2023-11-29 at 8 53 18 AM" src="https://user-images.githubusercontent.com/130494366/286616862-c98659e2-0b42-4a42-9950-7e5fb62eba2b.png">
 
 ### Contributors
 
