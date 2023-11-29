@@ -17,7 +17,7 @@ function ThesaurusDetails({detail, rIndex, selectedWord}) {
       <div >
         <div className="thes-word">{selectedWord}</div>
       </div>
-      <p className="thes-word">{detail}</p>
+      <p className="syns-and-ants">{detail}</p>
     </div>
   )
 }

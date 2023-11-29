@@ -4,6 +4,44 @@
   max-width: 50%;
 }
 
+.phonetic, 
+.part-of-speech, 
+.meaning, 
+.definition,
+.example {
+  font-family: var( --font-body-primary);
+  font-size: 1.15rem;
+}
+
+.phonetic {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.part-of-speech {
+color: #52796f;
+font-size: 1.6rem;
+font-weight: 600;
+padding-bottom: 4%;
+padding-top: 4%;
+}
+
+.definition {
+  margin-bottom: -.3rem;
+}
+
+.example:not(:empty) {
+  color: gray;
+  padding-left: 36px;
+  font-style: italic;
+  padding-bottom: 4%;
+}
+
+.example:empty,
+.definition {
+  margin-bottom: 1.4rem;
+}
+
 @media only screen and (max-width: 540px) {
   .definition-section {
     max-width: 70%;

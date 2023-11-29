@@ -3,6 +3,13 @@
   max-width: 50%;
 }
 
+.synonym-heading,
+.antonym-heading {
+  font-family: var(--font-headings-primary);
+  font-weight: var(--font-weight-body-primary);
+  font-size: 1.4rem;
+}
+
 .synonym-cards-container, 
 .antonym-cards-container {
   display: grid;
@@ -15,6 +22,12 @@
 .thes-word-container {
   display: flex;
   justify-content: flex-start;
+}
+
+.syns-and-ants {
+  font-family: var(--font-body-primary);
+  font-weight: var(--font-weight-body-secondary);
+  font-size: 1.15rem;
 }
 
 @media only screen and (max-width: 940px) {
