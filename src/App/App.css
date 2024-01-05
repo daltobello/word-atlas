@@ -31,12 +31,13 @@
   --color-foreground-header: #fff;
   --color-borders-header: rgba(0, 0, 0, 0.15);
 
-  --color-text-main: #000000;
+  --color-text-main: #222225ec;
 }
 
 .App {
   height: 100vh;
 }
+
 
 p {
   margin: 0;
@@ -52,6 +53,5 @@ h2 {
   margin-bottom: 1rem;
   font-size: var(--headings-primary-size);
 }
-
 
 
