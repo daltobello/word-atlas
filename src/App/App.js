@@ -7,10 +7,12 @@ import DictionaryContainer from '../Components/DictionaryContainer/DictionaryCon
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Navigation from '../Components/Navigation/Navigation';
 import ErrorPage from '../Components/ErrorPage/ErrorPage';
-import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../Components/ThemeSwitcher/ThemeSwitcher';
+import { useTheme } from '../contexts/ThemeContext';
 
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
+  const {isDarkMode} = useTheme()
 
 
 const handleSearch = (searchedWord) => {
@@ -21,7 +23,11 @@ const DictionaryRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
   <>
       <Navigation className="nav-search"/>
       <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
-      <DictionaryContainer className="word-container" selectedWord={selectedWord}  setSelectedWord={setSelectedWord}/>
+      <DictionaryContainer 
+      className="word-container" 
+      selectedWord={selectedWord}  
+      setSelectedWord={setSelectedWord}
+      />
   </>
 );
 
@@ -29,12 +35,16 @@ const ThesaurusRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
   <>
     <Navigation className="nav-search"/>
     <SearchDefinitions className="nav-search" handleSearch={handleSearch}/>
-    <ThesaurusContainer className="word-container" selectedWord={selectedWord} setSelectedWord={setSelectedWord} />
+    <ThesaurusContainer 
+      className="word-container" 
+      selectedWord={selectedWord} 
+      setSelectedWord={setSelectedWord} 
+      />
   </>
 );
 
   return (
-    <main className="App">
+    <main className={`App ${isDarkMode ? "dark" : "light"}`}>
       <ThemeSwitcher />
       <Routes>
         <Route path="/" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
