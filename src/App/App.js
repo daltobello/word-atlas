@@ -7,9 +7,11 @@ import DictionaryContainer from '../Components/DictionaryContainer/DictionaryCon
 import ThesaurusContainer from '../Components/ThesaurusContainer/ThesaurusContainer';
 import Navigation from '../Components/Navigation/Navigation';
 import ErrorPage from '../Components/ErrorPage/ErrorPage';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 function App() {
   const [selectedWord, setSelectedWord] = useState("") 
+
 
 const handleSearch = (searchedWord) => {
   setSelectedWord(searchedWord)
@@ -33,6 +35,7 @@ const ThesaurusRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
 
   return (
     <main className="App">
+      <ThemeSwitcher />
       <Routes>
         <Route path="/" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
         <Route path="/thesaurus" element={<ThesaurusRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>
