@@ -1,9 +1,11 @@
 import "./SearchDefinitions.css"
 import {useState} from "react"
 import PropTypes from 'prop-types';
+import { useTheme } from "../../contexts/ThemeContext";
 
 function SearchDefinitions({handleSearch}) {
   const [searchedWord, setSearchedWord] = useState("")
+  const { isDarkMode } = useTheme();
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -12,9 +14,10 @@ function SearchDefinitions({handleSearch}) {
 
 
   return (
-    <div className="search-container">
+    <div className={`search-container ${isDarkMode ? "dark" : "light"}`}>
       <form className="form-input" onSubmit={handleSubmit}>
-        <input className="search-input"
+        <input 
+        className={`search-input ${isDarkMode ? "dark-bg" : "light-bg"}`}
         type="text"
         name="word-search"
         placeholder="Search for a word..."
