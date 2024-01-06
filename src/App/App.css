@@ -3,6 +3,14 @@
   border: solid 1px green; 
 } */
 
+.App {
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+}
+
 :root {
   --font-headings-primary: "Inter", sans-serif;
   --font-weight-headings-primary: 600;
@@ -20,12 +28,6 @@
   --search-input-background: rgb(233, 233, 233);
   --search-input-text-primary: black;
 
-  /* --font-weight-menu: var(--font-weight-body-primary-medium);
-  --font-weight-buttons: var(--font-weight-body-primary-medium);
-  --base-headings-primary-size: 79;
-  --base-headings-line: 1; */
-  /* --base-headings-spacing: 0.01rem; */
-
   --color-background-header: #ffffff;
   --color-text-header: #000000;
   --color-foreground-header: #fff;
@@ -34,9 +36,6 @@
   --color-text-main: #222225ec;
 }
 
-.App {
-  height: 100vh;
-}
 
 
 p {

@@ -47,10 +47,10 @@ cursor: not-allowed;
 }
 
 
-.light-bg .search-input {
+.light-bg {
   background-color: #fff; 
 }
 
-.dark-bg .search-input {
+.dark-bg {
   background-color: #333; 
 }
