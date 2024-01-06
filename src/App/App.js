@@ -44,7 +44,7 @@ const ThesaurusRoute = ({ selectedWord, setSelectedWord, handleSearch }) => (
 );
 
   return (
-    <main className={`App ${isDarkMode ? "dark" : "light"}`}>
+    <main className={`App overflow-auto ${isDarkMode ? "dark" : "light"}`}>
       <ThemeSwitcher />
       <Routes>
         <Route path="/" element={<DictionaryRoute className="word-container" selectedWord={selectedWord} handleSearch={handleSearch} setSelectedWord={setSelectedWord}/>}/>

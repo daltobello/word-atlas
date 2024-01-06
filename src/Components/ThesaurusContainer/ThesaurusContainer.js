@@ -54,7 +54,7 @@ function ThesaurusContainer({ selectedWord, setSelectedWord}) {
         {networkError ? (
           <ErrorPage networkError={networkError} resetError={resetError} setSelectedWord={setSelectedWord}/>
         ) : (
-          <div className="all-words">
+          <div className="all-words overflow-scroll">
             {noResults ? (
               <p>Sorry, there were no results</p>
             ) : Object.keys(wordDetails).length > 0 && (

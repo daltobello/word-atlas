@@ -6,12 +6,6 @@
   background-color: rgb(32, 34, 40);
 }
 
-.theme-change {
-  display: flex;
-  align-items: center;
-  height: 8%;
-  width: 100%;
-}
 
 .swap {
   padding-top: 3em;
