@@ -8,6 +8,11 @@ module.exports = {
 
     },
   },
-  plugins: [require("daisyui"),  require('autoprefixer')],
+  plugins: [
+    require("daisyui")({
+      themes: ["light", "dark", "cupcake"],
+    }),
+    require('autoprefixer')
+  ],
 }
 
