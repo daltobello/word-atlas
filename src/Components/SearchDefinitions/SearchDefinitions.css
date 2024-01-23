@@ -31,11 +31,12 @@ height: 100%;
 
 .submit-search {
   margin: 0 2%;
-  height: 45%;
-  background-color: var(--search-input-background);
+  /* height: 45%; */
+  height: 4em;
+  /* background-color: var(--search-input-background); */
   text-decoration: none;
   border: none;
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 .submit-search:hover {
