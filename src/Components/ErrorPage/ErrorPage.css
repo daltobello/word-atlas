@@ -8,3 +8,7 @@
   grid-template-rows: 15% .1%;
 }
 
+.return-button {
+  border: none;
+  border-radius: 10px;
+}
