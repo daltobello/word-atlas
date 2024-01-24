@@ -7,11 +7,11 @@ function ThesaurusDetails({detail, rIndex, selectedWord}) {
   
   let cardClass = ""
   if(rIndex === 0) {
-    cardClass = "dark-gray"
+    cardClass = "primary-thes-bg"
   } else if(rIndex === 1) {
-    cardClass = "gray"
+    cardClass = "secondary-thes-bg"
   } else if(rIndex === 2) {
-    cardClass = "light-gray"
+    cardClass = "tertiary-thes-bg"
   }
 
   return (
@@ -19,7 +19,7 @@ function ThesaurusDetails({detail, rIndex, selectedWord}) {
       <div >
         <div className="thes-word">{selectedWord}</div>
       </div>
-      <p className="dark:text-black syns-and-ants">{detail}</p>
+      <p className="dark:text-white syns-and-ants">{detail}</p>
     </div>
   )
 }

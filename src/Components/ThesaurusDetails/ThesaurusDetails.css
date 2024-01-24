@@ -9,21 +9,21 @@
 	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
 }
 
-.dark-gray {
-  background-color: #8b8c89;
+.primary-thes-bg {
+  background-color: #023e7d;
   padding: 3% 5% 3% 5%;
   border-radius: 8px;
 }
 
-.gray {
-  background-color: #c9c9c9;
+.secondary-thes-bg {
+  background-color: #0353a4;
   padding: 3% 5% 3% 5%;
   border-radius: 8px;
 
 }
 
-.light-gray {
-  background-color:#f0f0f0;
+.tertiary-thes-bg {
+  background-color:#0466c8;
   padding: 3% 5% 3% 5%;
   border-radius: 8px;
 }
