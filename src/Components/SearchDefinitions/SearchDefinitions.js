@@ -24,7 +24,7 @@ function SearchDefinitions({handleSearch}) {
         value={searchedWord}
         onChange={(event) => setSearchedWord(event.target.value)}
         />
-        <button className="submit-search" disabled={!searchedWord} >Submit</button>
+        <button className="btn btn-active btn-neutral submit-search dark:text-white" data-theme="nord" disabled={!searchedWord} >Submit</button>
       </form>
     </div>
   )

@@ -31,11 +31,12 @@ height: 100%;
 
 .submit-search {
   margin: 0 2%;
-  height: 45%;
-  background-color: var(--search-input-background);
+  /* height: 45%; */
+  height: 4em;
+  /* background-color: var(--search-input-background); */
   text-decoration: none;
   border: none;
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 .submit-search:hover {
@@ -44,13 +45,14 @@ height: 100%;
 
 .submit-search[disabled] {
 cursor: not-allowed;
+background-color: rgb(217, 217, 217);
 }
 
 
-.light-bg {
+/* .light-bg {
   background-color: #fff; 
-}
+} */
 
-.dark-bg {
+/* .dark-bg {
   background-color: #333; 
-}
+} */

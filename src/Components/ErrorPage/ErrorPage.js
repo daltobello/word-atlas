@@ -20,7 +20,7 @@ function ErrorPage({networkError, resetError, errorMessage, setSelectedWord}) {
       <div className="serverError">
          <p className="error-message">{errorMessage ? errorMessage : `Oh no! ${networkError}. Please try again.`}</p>
           <Link to={"/"} onClick={() => {handleError()}} className="home-link">
-              <button className="return-button">Reset</button>
+              <button className="btn btn-active btn-neutral return-button">Reset</button>
           </Link>
       </div>
   )
