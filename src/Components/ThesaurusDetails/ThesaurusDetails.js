@@ -1,7 +1,9 @@
 import "./ThesaurusDetails.css"
 import PropTypes from "prop-types"
+import { useTheme } from "../../contexts/ThemeContext";
 
 function ThesaurusDetails({detail, rIndex, selectedWord}) {
+  const { isDarkMode } = useTheme();
   
   let cardClass = ""
   if(rIndex === 0) {
@@ -13,11 +15,11 @@ function ThesaurusDetails({detail, rIndex, selectedWord}) {
   }
 
   return (
-    <div className={`thes-detail-cards ${cardClass}`}>
+    <div  className={`thes-detail-cards ${cardClass} ${isDarkMode ? "dark" : "light"}`}>
       <div >
         <div className="thes-word">{selectedWord}</div>
       </div>
-      <p className="syns-and-ants">{detail}</p>
+      <p className="dark:text-black syns-and-ants">{detail}</p>
     </div>
   )
 }
