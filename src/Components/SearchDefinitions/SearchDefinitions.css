@@ -45,6 +45,7 @@ height: 100%;
 
 .submit-search[disabled] {
 cursor: not-allowed;
+background-color: rgb(217, 217, 217);
 }
 
 
