@@ -6,16 +6,11 @@
 }
 
 .nav-link {
-  /* color: black; */
   font-size: 1.5rem;
   margin: 0 2%;
-  text-decoration: none;
   font-family: var(--font-headings-primary);
 }
 
-/* .active-link {
-  color: rgb(162, 18, 18);
-  text-decoration:underline;
-  background-color: white;
-} */
-
+.active-link {
+  text-decoration: underline;
+}
