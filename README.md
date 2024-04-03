@@ -8,9 +8,10 @@
 This application caters to individuals aiming to enhance their English proficiency by offering a comprehensive dictionary and thesaurus. Users can explore words, accessing detailed information such as definitions, parts of speech, and illustrative usage. The app presents a spectrum of synonyms and antonyms, which are color-coded to highlight their relevance.
 
 ### Preview
-
-<img width="1291" alt="Screenshot 2023-11-29 at 8 53 04 AM" src="https://user-images.githubusercontent.com/130494366/286616735-7a47755d-b796-4511-a80b-3a06d51d3aa0.png">
-<img width="1292" alt="Screenshot 2023-11-29 at 8 53 18 AM" src="https://user-images.githubusercontent.com/130494366/286616862-c98659e2-0b42-4a42-9950-7e5fb62eba2b.png">
+<img width="1360" alt="Screenshot 2024-04-03 at 5 55 34 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/51bc863a-c1e1-4511-8eb7-850f039dd9b8">
+<img width="1358" alt="Screenshot 2024-04-03 at 5 56 33 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/76efaebe-ce1b-4914-ad20-52ba174856cd">
+<img width="1361" alt="Screenshot 2024-04-03 at 5 57 44 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/3258083b-06d5-4948-a1d7-d34f0cb10e45">
+<img width="1359" alt="Screenshot 2024-04-03 at 5 58 16 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/3edef219-696f-4c62-b134-6687d64c9467">
 
 ### Contributors
 
