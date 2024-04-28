@@ -5,7 +5,7 @@
 </div>
 
 ### Abstract
-This application caters to individuals aiming to enhance their English proficiency by offering a comprehensive dictionary and thesaurus. Users can explore words, accessing detailed information such as definitions, parts of speech, and illustrative usage. The app presents a spectrum of synonyms and antonyms, which are color-coded to highlight their relevance.
+This application caters to anyone aiming to enhance their English proficiency by offering a comprehensive dictionary and thesaurus. Users can search words, accessing detailed information such as definitions, parts of speech, and illustrative usage. The app presents a spectrum of synonyms and antonyms, which are color-coded to highlight their relevance.
 
 ### Preview
 <img width="1360" alt="Screenshot 2024-04-03 at 5 55 34 PM" src="https://github.com/daltobello/word-atlas/assets/130494366/51bc863a-c1e1-4511-8eb7-850f039dd9b8">
