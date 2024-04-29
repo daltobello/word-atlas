@@ -4,6 +4,23 @@
   max-width: 50%;
 }
 
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-audio {
+  background-image: url('../../assets/play-circle-svgrepo-com.svg');
+  width: 4em;
+  height: 4em;
+}
+
+/* .play-audio:hover {
+  background-image: url('../../assets/play-circle-svgrepo-com.svg');
+  width: 4em;
+  height: 4em;
+} */
+
 .phonetic, 
 .part-of-speech, 
 .meaning, 
